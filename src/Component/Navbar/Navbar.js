@@ -1,17 +1,18 @@
 import React from "react";
 import logo from "../../asset/logo.jpg";
-import "./Navbar.css"
+
 
 const Navbar= ()=>{
         return(
+            <>
             <div className="nav">
                  <img src={logo} alt="One step a head" className="logo-img"/>
                  <ul className="nav-links">
                    <li>
-                       <a href="home" className="nav-link">
+                       <a href="/home" className="nav-link">
                            Home
                            </a></li>
-                           <li><a href="aboutus" className="nav-link">
+                           <li><a href="/aboutus" className="nav-link">
                                aboutUs
                                </a></li>
                                <li><a href="ContactUs" className="nav-link">
@@ -28,6 +29,8 @@ const Navbar= ()=>{
                                            </a></li>
                                            </ul>
                                            </div>
+                                           
+                                           </>
         )
 }
 export default Navbar;
