@@ -1,6 +1,7 @@
 import React from "react";
 import "../Component/Navbar/Navbar";
-import photo from "../asset/therap.jpg"
+import photo from "../asset/therap.jpg";
+import Footer from "../Component/Footer";
 const Home=()=>{
     return(
 <div className="ELI">

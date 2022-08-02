@@ -1,14 +1,20 @@
 import React from "react";
 import HomeLayout from "../Component/Homelayout";
 import "../Component/Navbar/Navbar.css";
-import photo from "../asset/therap.jpg";
-import logo from "../asset/logo.jpg";
+// import photo from "../asset/gu.jpg";
+// import logo from "../asset/logo.jpg";
+import { Button, Card } from 'antd';
+import people from "../asset/yg.jpg";
+import { Carousel } from 'antd';
+
+
 const About = () => {
   return (
     <>
-      <div className="nav">
-        <img src={logo} alt="One step a head" className="logo-img" />
-        <ul className="nav-links">
+
+      <div className="images" style={{backgroundColor:"green"}}>
+        <div className="nav">
+        <ul className="nav-links" style={{marginTop:"397px",marginLeft:"50%",backgroundPosition:"center"}}>
           <li>
             <a href="/home" className="nav-link">
               Home
@@ -35,33 +41,46 @@ const About = () => {
             </a>
           </li>
           <li>
-            <a href="Review" className="nav-link">
+            <a  href="Review" className="nav-link btn-link">
               GetStarted
             </a>
           </li>
         </ul>
       </div>
-
-      <div>
-        <img src={photo} alt="elize" className="elise" />
       </div>
-      <card>
       <section>
-        <p style={{ textAlign: "center" }}>our Mission</p><br></br>
+      <p style={{color:"green",textAlign:"center"}}>our mission</p><br></br>
         <p style={{textAlign:"center"}}>
           Making professional therapy accessible, affordable and convenient so<br></br>
           anyone who trugles with life challenges can get help, anytime and
           anywhere.
         </p> <br></br>
-        <p style={{ textAlign: "center" }}>our Therapist</p><br></br>
+        <p style={{color:"green",textAlign:"center",fontSize:"20px"}}>our Therapist</p><br></br>
         <p style={{textAlign:"center"}}>
           Making professional therapy accessible, affordable and convenient so<br></br>
           anyone who trugles with life challenges can get help, anytime and
           anywhere.
         </p> <br></br>
-      </section>    
-      </card>
-    </>
+      </section>
+      <div className="carausel-img">
+      <Carousel autoplay> 
+      <Card>
+        <img src={people} alt="elize" ></img>
+        <img src={people} alt="elize" ></img> 
+        <img src={people} alt="elize" ></img>
+        <img src={people} alt="elize" ></img>
+        <img src={people} alt="elize" ></img>
+        <img src={people} alt="elize" ></img>
+        <img src={people} alt="elize" ></img>
+        <img src={people} alt="elize" ></img>
+        <img src={people} alt="elize" ></img>
+        <img src={people} alt="elize" ></img></Card>
+  </Carousel> 
+  </div> 
+  <Button style={{marginLeft:"45%",color:"green"}}>Meet Our Therapist</Button>
+  <p style={{color:"green",textAlign:"center",fontSize:"20px"}}>our Success stories</p>
+  
+     </>
   );
 };
 export default About;
