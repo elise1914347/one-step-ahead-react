@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../../asset/logo.jpg";
+import logo from "../../asset/Images/logo.jpg";
+import "../Navbar/Navbar.css"
 
 
 const Navbar= ()=>{

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Roboto",sans-serif;
+}
+.footer-container{
+    background: rgb(9, 9, 70);
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    color: white;
+}
+p span{
+    display: block;
+}
+.footer-title{
+    color:  white;
+    /* font-size: 2.4rem; */
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+    padding-top: 2rem 0;
+    color: #ddd;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    /* font-size: 2rem; */
+}
+.copyright
+.contactus-column{
+    color: white;
+    font-size: 1.5rem;
+}
+.footer-container a:link,
+.footer-container a:visited{
+    color: white;
+    /* font-size: 1.6rem; */
+}
+.footer-container a:hover,
+.footer-container a:active{
+    color: yellow;
+}
+.logo-column{
+    margin-bottom: auto;
+}

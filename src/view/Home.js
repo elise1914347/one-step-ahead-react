@@ -1,11 +1,9 @@
 import React from "react";
-import "../Component/Navbar/Navbar";
-import photo from "../asset/therap.jpg"
-const Home=()=>{
-    return(
-<div className="ELI">
- <img src={photo} alt="elize"className="elise"/>
-                                           </div>
-    )
+
+const Home=()=> {
+  return (
+   <h1>helloword</h1>
+  );
 }
+
 export default Home;
