@@ -1,6 +1,6 @@
 import React from "react";
-import logofooter from "../asset/logo.jpg"
-import {FacebookOutlined,TwitterOutlined,InstagramOutlined} from "@ant-design/icons"
+import logofooter from "../asset/Images/logo.jpg"
+import {FacebookOutlined,TwitterOutlined,InstagramOutlined,MessageOutlined,PhoneOutlined } from "@ant-design/icons"
 import "./Footer.css";
 
 const Footer=()=>{
@@ -8,44 +8,58 @@ const Footer=()=>{
 let year=d.getFullYear()
     return(
         <div className="footer-container">
+           <div className="Home-column">
+            <h4 style={{fontSize:"12px"}}>Home</h4>
+            <p><a href="#">Terms&condition</a></p>
+
+           </div>
+           <div className="ABout-column">
+            <h4 style={{fontSize:"12px"}}>AboutUs</h4>
+            <p><a href="#">privacy and policy</a></p>
+
+           </div>
+           {/* <div className="contactus-column">
+               <h3 className="footer-title">Contact-us</h3>
+               <p>523 Remera ST., 3nd floor,<span>Kigali Rwanda</span></p>
+               <p>
+               <a href="mailto:webmaste@example.com">eliseduse@gmail.com</a>
+               </p>
+               <p>
+               <a href="mailto:webmaste@example.com">angejoyeuse@gmail.com</a>
+               </p>
+               <p>
+               <a href="mailto:webmaste@example.com">fabiola@gmail.com</a>
+               </p>
+               <p><a href="#">web Accesibility</a></p>
+           </div> */}
+           <div className="Review-column">
+            <h4 style={{fontSize:"12px"}}>Review</h4>
+            <p><a href="#">Cookie setting</a></p>
+
+           </div>
+           <div className="login-column">
+            <h4 style={{fontSize:"12px"}}>Login</h4>
+            <p><a href="#">WebAccessibility</a></p>
+
+           </div>
+           <div className="GetStarted-column">
+            <h4 style={{fontSize:"12px"}}>GetStarted</h4>
+            <p><a href="#">WebAccessibility</a></p>
+
+           </div>
            <div className="logo-column">
-               <img src={logofooter} alt="logo footer" className="logo-img"/>
+               <img src={logofooter} alt="logo footer" className="logo-img"/><br></br>
                <div className="icons">
                    <FacebookOutlined/>
                    <TwitterOutlined />
                    <InstagramOutlined />
+                   <MessageOutlined />
+                   <PhoneOutlined />
                </div>
-               <p className="copyright">copyright &copy;{year} by Therapist,
-               <span> Inc.All right resrved</span>{""}
+               <p className="copyright">copyright &copy;{year} by onestepAhead
                </p>
            </div>
-           <div className="contactus-column">
-               <h3 className="footer-title">Contact-us</h3>
-               <p>623 Kacyiru ST., 2nd floor,<span>Kigali Rwanda</span></p>
-               <p><a href="tel:+250-788-737-287">tel:+250-788-737-287</a>
-               <a href="mailto:webmaste@example.com">eliseduse@gmail.com</a>
-               
-               </p>
-           </div>
-           {/* <div className="account-column"> */}
-               {/* <h3 className="footer-title">account</h3> */}
-               <p><a href="#">Create Account</a></p>
-               <p><a href="#">Sign up</a></p>
-               <p><a href="#">GetStarted</a></p>
-               <p><a href="#">GetStarted</a></p>
-           {/* </div> */}
-           {/* <div className="company-column"> */}
-               {/* <h3 className="footer-title">company</h3>
-               <p><a href="#">About me </a></p>
-               <p><a href="#">career</a></p>
-               <p><a href="#">partner</a></p> */}
-           {/* </div> */}
-           {/* <div className="company-column">
-               <h3 className="footer-title">Resources</h3>
-               <p><a href="#">About me for directory</a></p>
-               <p><a href="#">Help center</a></p>
-               <p><a href="#">privacy</a></p>
-           </div> */}
+          
         </div>
     )
 }
