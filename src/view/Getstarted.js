@@ -21,7 +21,7 @@ const GetStarted =()=>{
 
 return(
   <>
-
+<div className="container">
 <Card classname="card">
 <Form className="form">
 <Form.Item label="would you allow your partern to join?" className="label"></Form.Item>
@@ -43,6 +43,7 @@ return(
   <img src={depression} className="image1"/>
   <img src={stress} className="image1"/>
   <img src={relationship} className="image1"/>
+</div>
 </div>
 </>
 )

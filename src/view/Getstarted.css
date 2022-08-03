@@ -15,37 +15,41 @@ body{
     gap: 20px;
 }
 .card,.form{
-    margin:10rem;
+    /* margin:10rem; */
     width:55rem;
-    height: 45rem;
+    height: 50rem;
     padding-left: 3rem;
     padding-right: 10%;
     padding-top: 6%;
-    background-color: rgb(37, 244, 175);
+    /* background-color: rgb(37, 244, 175); */
     background-position: center;
     margin-left: 30%;
 }
 .label{
     margin-left:30%;
-    font-size:15px;
+    font-size:17px;
 }
 .inputB{
     background-color: rgba(0, 0, 255, 0.968);
-    padding:10px;
+    padding:15px;
     border-radius: 10rem;
-    width:30rem;
+    width:34rem;
     margin-top: 30px;
     text-align: center;
     cursor: pointer;
 }
 .image1{
-    height: 40%;
-    width:28%;
+    height: 60%;
+    width:30%;
     padding:100px;
     
 }
 .image{
     grid-template-columns:30% 30% 30%;
-    gap: 9rem;
-    margin-left: 10%;
+    margin-top:-9rem;
+    margin-left: 20%;
+}
+.container{
+    display:inline-block;
+    gap:1rem;
 }
