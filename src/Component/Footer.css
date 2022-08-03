@@ -10,10 +10,10 @@ body{
     font-family: "Roboto",sans-serif;
 }
 .footer-container{
-    background: rgb(14, 14, 82);
-    padding: 8rem;
+    background: rgb(9, 9, 70);
+    padding: 5px;
     display: grid;
-    grid-template-columns: 25% 20% 20% 20% 15%;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
     color: white;
 }
 p span{
@@ -25,9 +25,11 @@ p span{
 }
 .icons{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     padding-top: 2rem 0;
     color: #ddd;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
     /* font-size: 2rem; */
 }
 .copyright
@@ -42,5 +44,8 @@ p span{
 }
 .footer-container a:hover,
 .footer-container a:active{
-    color: #ccc;
+    color: yellow;
+}
+.logo-column{
+    margin-bottom: auto;
 }
