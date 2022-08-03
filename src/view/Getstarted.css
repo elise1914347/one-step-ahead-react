@@ -1,0 +1,51 @@
+*{
+padding:0px;
+margin:0px;
+box-sizing: border-box;
+}
+html{
+    font-size:62.5%
+}
+body{
+    font-family: "Roboto",sans-serif;
+}
+.input{
+    margin-left:30%;
+    display: block;
+    gap: 20px;
+}
+.card,.form{
+    margin:10rem;
+    width:55rem;
+    height: 45rem;
+    padding-left: 3rem;
+    padding-right: 10%;
+    padding-top: 6%;
+    background-color: rgb(37, 244, 175);
+    background-position: center;
+    margin-left: 30%;
+}
+.label{
+    margin-left:30%;
+    font-size:15px;
+}
+.inputB{
+    background-color: rgba(0, 0, 255, 0.968);
+    padding:10px;
+    border-radius: 10rem;
+    width:30rem;
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.image1{
+    height: 40%;
+    width:28%;
+    padding:100px;
+    
+}
+.image{
+    grid-template-columns:30% 30% 30%;
+    gap: 9rem;
+    margin-left: 10%;
+}
