@@ -11,7 +11,7 @@ body{
 }
 .footer-container{
     background: rgb(9, 9, 70);
-    padding: 5px;
+    padding: 45px;
     display: grid;
     grid-template-columns: 15% 15% 15% 15% 15% 15%;
     color: white;

@@ -1,8 +1,18 @@
 import React from "react";
+import "../view/home.css";
+import img from "../asset/Images/home2.jpg"
 
 const Home=()=> {
   return (
-   <h1>helloword</h1>
+    <>
+      <div className="img">
+
+       <img src={img} style ={{Width:"100%", Height:"100vh"}}></img>
+      </div>
+    
+    
+    </>
+   
   );
 }
 
