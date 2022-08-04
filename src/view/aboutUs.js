@@ -92,7 +92,7 @@ const About = () => {
         <br></br>
         that."
       </h1>
-      <Button style={{fontSize:"10px",textAlign:"center",float:"left",marginTop:"50px",background:"green"}} >ReadMore</Button>
+      <Button style={{fontSize:"15px",textAlign:"center",float:"right",marginTop:"50px",color:"green",borderRadius:"80px"}} >ReadMore</Button>
       <h2 className="allworld">
         "I have now been working with Sheilah on BetterHelp for about 4 weeks<br></br>
         and can confidently say that I am a lot less anxious about my career
@@ -100,13 +100,13 @@ const About = () => {
         path now than when I first signed up...I am so much better off now than
         <br></br>I was before."
       </h2>
-      <Button style={{fontSize:"10px",textAlign:"center",float:"left",marginTop:"50px",background:"green"}}>ReadMore</Button>
+      <Button style={{fontSize:"15px",textAlign:"center",float:"right",marginTop:"50px",color:"green",borderRadius:"80px"}}>ReadMore</Button>
       <h3 className="allworld">
         "I am a totally different person now than when I signed up 19 months<br></br>
         ago. I have found my voice and can speak up for myself now....My<br></br>
         confidence level is also better than it ever has been."
       </h3>
-      <Button style={{fontSize:"10px",textAlign:"center",float:"right",marginTop:"50px",background:"green"}}>ReadMore</Button>
+      <Button style={{fontSize:"15px",textAlign:"center",float:"right",marginTop:"50px",color:"green",borderRadius:"80px"}}>ReadMore</Button>
       </div>
     </>
   );

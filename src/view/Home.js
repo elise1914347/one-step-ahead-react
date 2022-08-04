@@ -1,14 +1,13 @@
 import React from "react";
-import "../view/home.css";
+import HomeLayout from "../Component/Homelayout";
+import "./Home.css"
 import img from "../asset/Images/home2.jpg"
+
 
 const Home=()=> {
   return (
     <>
-      <div className="img">
-
-       <img src={img} style ={{Width:"100%", Height:"100vh"}}></img>
-      </div>
+      <div className="img"><img src={img} alt="" style={{width:"1079px",backgroundRepeat:"no-repeat",objectFit:"cover",backgroundSize:"cover",backgroundPosition:"center"}}></img></div>
     
     
     </>
