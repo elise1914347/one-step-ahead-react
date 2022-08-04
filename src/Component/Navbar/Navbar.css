@@ -14,9 +14,9 @@
 .nav-links{
     display: flex;
     gap: 1.5rem;
-    /* list-style-type:none; */
+    list-style-type:none;
     float: right;
-    padding: 10px;
+    padding: 7px;
     margin-left: 44%;
 }
 .nav-link:link,.nav-link:visited{
@@ -138,4 +138,11 @@ color: white;
     height: 30%;
     margin-left: 30.5%;
     object-fit:cover
+}
+
+.allworld{
+    font-size: 10px;
+    grid-template-columns: 30% 25% 25%;
+    display: flex;
+
 }
