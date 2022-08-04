@@ -9,6 +9,7 @@ import IndividualForm from "../view/individual";
 import DecideForm from "../view/decide";
 import HomeLayout from "../Component/Homelayout";
 import Dashboard from "../view/Admin/Dashboard";
+import Login from "../Component/logIn"
 
 const index=() =>{
     return (
@@ -17,6 +18,7 @@ const index=() =>{
        
         <Routes>
         <Route exact path="/Home" element={<Home/>}></Route>  
+        <Route exact path="/Login" element={<Login/>}></Route>  
         <Route exact path="/aboutus" element={<AboutUs/>}></Route>
         <Route exact path="/start" element={<GetStarted/>}></Route>
         <Route exact path="/couple" element={<CoupleForm/>}></Route>

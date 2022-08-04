@@ -34,7 +34,7 @@ const DashLayout = ({ children }) => {
             {
               key: "2",
               icon: <VideoCameraOutlined  onClick={()=>navigate("/User")}/>,
-              label: <h4 onClick={()=>navigate("/admin")} style={{color:"white"}}>login</h4>
+              label: <h4 onClick={()=>navigate("/Login")} style={{color:"white"}}>login</h4>
             },
             {
               
