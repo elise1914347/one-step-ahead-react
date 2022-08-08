@@ -41,7 +41,7 @@ const DashLayout = ({ children }) => {
             {
               
               key: "3",
-              icon: <UploadOutlined onClick={()=>navigate("/Therapist")}/>,
+             icon: <UploadOutlined onClick={()=>navigate("/Therapist")}/>,
               label:<h4 onClick={()=>navigate("/request")} style={{color:"white"}}>Request-Therapist</h4>
             },
             {
