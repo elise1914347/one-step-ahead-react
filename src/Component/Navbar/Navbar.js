@@ -24,12 +24,13 @@ const Navbar= ()=>{
                                    <li><a href="Review" className="nav-link">
                                            Review
                                            </a></li>
-                                           <li><a href="Review" className="nav-link">
+                                           <li><a href="/login" className="nav-link">
                                            LogIn
                                            </a></li>
-                                           <li><a href="Review" className="nav-link">
+                                           <li><a href="/Getstarted" className="nav-link">
                                            GetStarted
                                            </a></li>
+
                                            </ul>
                                            </div>
                                            </div>
