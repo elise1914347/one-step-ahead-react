@@ -7,7 +7,9 @@ const Navbar= ()=>{
         return(
             <>
             <div className="nav">
-                 <img src={logo} alt="One step a head" className="logo-img"/>
+                <div>
+                 <img src={logo} alt="One step a head" className="logo-img"/></div>
+                 <div style={{marginLeft:"40%",padding:"10px",fontSize:"12px"}}>
                  <ul className="nav-links">
                    <li>
                        <a href="/home" className="nav-link">
@@ -31,8 +33,21 @@ const Navbar= ()=>{
 
                                            </ul>
                                            </div>
+                                           </div>
                                            
                                            </>
         )
 }
 export default Navbar;
+// import React from "react";
+
+// function Navbar(){
+
+//     return(
+//         <div className="Navbar">
+
+//         </div>
+
+//     )
+
+// }

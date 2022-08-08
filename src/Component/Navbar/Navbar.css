@@ -14,10 +14,9 @@
 .nav-links{
     display: flex;
     gap: 1.5rem;
-    /* list-style-type:none; */
+    list-style-type:none;
     float: right;
-    padding: 10px;
-    margin-left: 44%;
+    margin-left: 47%;
 }
 .nav-link:link,.nav-link:visited{
     text-decoration: none;
@@ -30,6 +29,8 @@
 }
 .nav{
     background: rgb(14, 14, 82);
+    display: flex;
+    height: 5rem;
     /* padding-bottom: 10px; */
 }
 .container{
@@ -67,6 +68,7 @@
     width: 100%;
     height: 30rem;
 }
+
 .img{
     background-image: url("../../asset/Images/home2.jpg");
     background-position: center;
@@ -184,4 +186,14 @@ color: white;
     height: 30%;
     margin-left: 30.5%;
     object-fit:cover
+}
+
+.allworld{
+    font-size: 10px;
+    grid-template-columns: 30% 25% 25%;
+    display: flex;
+
+}
+.btn button{
+    background: green;
 }

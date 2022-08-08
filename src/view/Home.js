@@ -6,10 +6,14 @@ import photo  from "../asset/Images/t1.jpg";
 import pic from "../asset/Images/t1.jpg";
 import picture from "../asset/Images/t4.jpg";
 import therapy from "../asset/Images/t6.jpg";
+import img from "../asset/Images/home2.jpg";
+import  "../view/Home.css";
 
-const Home=()=> {
+
+const Home = () => {
   return (
     <>
+
       <div className="img" style={{ backgroundColor: "gray" }}>
      <h3 className="carousel-img" style={{color:"rgb(2, 12, 68)",textAlign: "center" }}>Stay Health And Be Happy</h3><br></br>
      <h3  className="carousel-img"style={{color:"rgb(2, 12, 68)",textAlign: "center"}}>What Type of Therapy are you looking for?</h3>
@@ -73,10 +77,25 @@ const Home=()=> {
           <img src="https://dy7glz37jgl0b.cloudfront.net/home/betterhelp/full-session.png?v=966d54b722cb" alt=""></img>  
         </div>
 
+
+      <div className="Header">
+        <img
+          src={img}
+          alt=""
+          style={{
+            minHeight: "100vh",
+            width: "100%",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            position: "relative",
+            backgroundImage:
+              "linear-gradient(rgba(24, 21, 21, 0.418), rgba(16, 18, 27, 0.7))",
+          }}
+        />  
+           
       </div>
     </>
-   
   );
-}
+};
 
 export default Home;

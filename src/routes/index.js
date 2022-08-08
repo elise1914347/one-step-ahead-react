@@ -26,7 +26,7 @@ const index=() =>{
         <Route exact path="/register" element={<RegisterTherapist/>}></Route>
         <Route exact path="/login" element={<Login/>}></Route>
         <Route exact path="/signup" element={<Register/>}></Route>
-        <Route exact path="/Home" element={<Home/>}></Route>  
+        <Route exact path="/Home" element={<Home/>}></Route>    
         <Route exact path="/aboutus" element={<AboutUs/>}></Route>
         <Route exact path="/start" element={<GetStarted/>}></Route>
         <Route exact path="/couple" element={<CoupleForm/>}></Route>
