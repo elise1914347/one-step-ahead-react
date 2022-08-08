@@ -26,10 +26,12 @@ const DashLayout = ({ children }) => {
           mode="inline"
           defaultSelectedKeys={["1"]}
           items={[
+            
+  
             {
               key: "1",
               icon: <UserOutlined onClick={()=>navigate("/One")}/>,
-              label: <h4 onClick={()=>navigate("/dashboard")} style={{color:"white"}}>signup</h4>
+              label: <h4 onClick={()=>navigate("/signup")} style={{color:"white"}}>signup-user</h4>
             },
             {
               key: "2",
@@ -40,7 +42,13 @@ const DashLayout = ({ children }) => {
               
               key: "3",
               icon: <UploadOutlined onClick={()=>navigate("/Therapist")}/>,
-              label:<h4 onClick={()=>navigate("/therapist")} style={{color:"white"}}>Therapist</h4>
+              label:<h4 onClick={()=>navigate("/request")} style={{color:"white"}}>Request-Therapist</h4>
+            },
+            {
+              
+              key: "3",
+              icon: <UploadOutlined onClick={()=>navigate("/Therapist")}/>,
+              label:<h4 onClick={()=>navigate("/register")} style={{color:"white"}}>Register-Therapist</h4>
             },
           ]}
         />
