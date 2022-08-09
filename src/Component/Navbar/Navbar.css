@@ -14,10 +14,9 @@
 .nav-links{
     display: flex;
     gap: 1.5rem;
-    /* list-style-type:none; */
+    list-style-type:none;
     float: right;
-    padding: 10px;
-    margin-left: 44%;
+    margin-left: 47%;
 }
 .nav-link:link,.nav-link:visited{
     text-decoration: none;
@@ -30,6 +29,8 @@
 }
 .nav{
     background: rgb(14, 14, 82);
+    display: flex;
+    height: 5rem;
     /* padding-bottom: 10px; */
 }
 .container{
@@ -66,6 +67,53 @@
     background-size: 120%;
     width: 100%;
     height: 30rem;
+}
+
+.img{
+    background-image: url("../../asset/Images/home2.jpg");
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 40rem;
+
+}
+.image{
+    background-image: url("../../asset/Images/login4.jpg");
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 900px;
+    height: 100vh;
+ 
+}
+h3{
+    /* position:relative;
+    display:block; */
+    font-size: 20px;
+    border: 20px;
+    color:rgb(2, 12, 68);
+    margin: 0 auto;
+    
+    
+}
+.button{
+  margin-left: 50px;
+  float: left;
+  border: radius 1px;
+  margin: 0 auto;
+}
+.radio{
+    float:center;
+    margin: 0 auto;
+    
+}
+.carousel-img{
+    width: 90%;
+    margin: 0 auto;
+    
 }
 /* .carousel-img{
     height: 10%;
@@ -122,7 +170,6 @@ color: white;
 .Success{
     width: 6%;
     height: 5%;
-    margin-bottom: 2rem;
     margin-left: 20%;
     border-radius: 100%;
 
@@ -138,4 +185,41 @@ color: white;
     height: 30%;
     margin-left: 30.5%;
     object-fit:cover
+}
+
+.allworld{
+    font-size: 10px;
+    display: inline-block;
+    padding: 1rem;
+
+}
+.btn button{
+    background: green;
+}
+.corousel-img{
+    width:28%;
+    margin: 0 auto;
+    height: 20%;
+    object-fit: cover;
+}
+.button-read{
+    padding: 1rem;
+    gap: 2.5rem;
+    display: inline-flex;
+    margin-left: 40%;
+}
+.button-read:hover Button{
+    transition: 0.5s;
+    color: green;
+}
+.gug:hover{
+    transition: 0.5s;
+    color: green;
+}
+.image-carousel img{
+    width: 30rem;
+    display: inline-block;
+}
+.cardgrid{
+    background-color: rgb(236, 175, 32);
 }

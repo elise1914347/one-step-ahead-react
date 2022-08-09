@@ -8,6 +8,18 @@ const Footer=()=>{
 let year=d.getFullYear()
     return(
         <div className="footer-container">
+                <div className="logo-column">
+               <img src={logofooter} alt="logo footer" className="logo-img"/><br></br>
+               <div className="icons">
+                   <FacebookOutlined/>
+                   <TwitterOutlined />
+                   <InstagramOutlined />
+                   <MessageOutlined />
+                   <PhoneOutlined />
+               </div>
+               <p className="copyright">copyright &copy;{year} by onestepAhead
+               </p>
+           </div>
            <div className="Home-column">
             <h4 style={{fontSize:"12px"}}>Home</h4>
             <p><a href="#">Terms&condition</a></p>
@@ -46,18 +58,6 @@ let year=d.getFullYear()
             <h4 style={{fontSize:"12px"}}>GetStarted</h4>
             <p><a href="#">WebAccessibility</a></p>
 
-           </div>
-           <div className="logo-column">
-               <img src={logofooter} alt="logo footer" className="logo-img"/><br></br>
-               <div className="icons">
-                   <FacebookOutlined/>
-                   <TwitterOutlined />
-                   <InstagramOutlined />
-                   <MessageOutlined />
-                   <PhoneOutlined />
-               </div>
-               <p className="copyright">copyright &copy;{year} by onestepAhead
-               </p>
            </div>
           
         </div>
