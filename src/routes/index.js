@@ -8,6 +8,8 @@ import CoupleForm from "../view/couple";
 import IndividualForm from "../view/individual";
 import DecideForm from "../view/decide";
 import HomeLayout from "../Component/Homelayout";
+
+import Question1 from "../view/question";
 import Dashboard from "../view/Admin/Dashboard";
 import RegisterTherapist from "../view/Admin/Register-Therapist";
 import Login from "../view/login";
@@ -34,7 +36,11 @@ const index=() =>{
         <Route exact path="/decide" element={<DecideForm/>}></Route>
          <Route exact path="/Home" element={<Home/>}></Route>  
             <Route exact path="/aboutus" element={<AboutUs/>}></Route>
+
+            <Route exact path="/question" element={<Question1/>}></Route>
+            
             <Route exact path="/dashboard" element={<Dashboard/>}></Route>    
+
         </Routes>
         </HomeLayout>
       
