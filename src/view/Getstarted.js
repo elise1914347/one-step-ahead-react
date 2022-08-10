@@ -32,7 +32,6 @@ const GetStarted = () => {
           this therapist a good starting point in getting to know you.
         </p>
       </div>
-      {/* <img src={getbgimg} /> */}
       <div className="container">
         <Card classname="card">
           <Form className="form">

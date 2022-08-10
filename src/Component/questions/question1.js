@@ -1,15 +1,20 @@
 import React from "react"
 import { Radio } from 'antd';
+import { Select, Form, Card} from 'antd';
+
 const QuestOne =()=>{
     return (
-        <div style={{width:"100%",height:"10rem",background:"#06062bf7",color:"white",fontSize:"15px",borderRadius:"10px",width:"34rem",
-        textAlign: "center"}}>
+        <div>
+            <Card  style={{width:"40%",margin:"0 auto",padding:"5%",marginTop:"1rem", backgroundColor:"rgb(82, 82, 111)"}}>
+            <Form style={{alignContent:"center"}}>
             <formItem label="select your gender">
-            <Radio.Group>
+            <Radio.Group >
       <Radio value="w">woman</Radio><br></br>
       <Radio value="m">man</Radio>
     </Radio.Group>
     </formItem>
+    </Form>
+    </Card>
         </div>
     )
 }
