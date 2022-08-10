@@ -1,0 +1,33 @@
+*{
+    margin: 0%;
+    padding: 0px;
+}
+.contact{
+    background-image: url("../asset/Images/t1.jpg");
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 2%; */
+    width: 100%;
+    height: 20rem;
+}
+.ct{
+    color: white;
+    margin-left: 46%;
+    padding-top: 100px;
+}
+.questions{
+    margin-left: 9%;
+    position: relative;
+}
+.formLabe{
+    margin-left:  55%;
+    background-color: rgb(10, 10, 85);
+    
+    padding-top: 0;
+    /* position: absolute; */
+    bottom: 10px;
+
+
+}
