@@ -4,7 +4,6 @@ import stress from "../asset/stress.webp";
 import relationship from "../asset/relationship.webp";
 import { useNavigate } from "react-router-dom";
 import "./Getstarted.css";
-// import getbgimg from "../asset/getstarted-bg.jpg";
 import { Form, Input, InputNumber, Card } from "antd";
 
 const GetStarted = () => {

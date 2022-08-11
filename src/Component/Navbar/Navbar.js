@@ -27,7 +27,7 @@ const Navbar= ()=>{
                                            <li><a href="/login" className="nav-link">
                                            LogIn
                                            </a></li>
-                                           <li><a href="/Getstarted" className="nav-link">
+                                           <li><a href="/start" className="nav-link">
                                            GetStarted
                                            </a></li>
 
