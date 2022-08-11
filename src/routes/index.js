@@ -13,6 +13,7 @@ import RegisterTherapist from "../view/Admin/Register-Therapist";
 import Login from "../view/login";
 import Register from "../view/sign-upget";
 import AskTherapist from "../view/requestTherapist";
+import TherapistForm from "../view/Therapist/therapistform";
 
 
 const index=() =>{
@@ -21,6 +22,7 @@ const index=() =>{
          <HomeLayout>
        
         <Routes>
+        <Route exact path="/therapist" element={<TherapistForm/>}></Route>
         <Route exact path="/asktherapist" element={<AskTherapist/>}></Route>
         <Route exact path="/Getstarted" element={<GetStarted/>}></Route>
         <Route exact path="/register" element={<RegisterTherapist/>}></Route>
@@ -34,7 +36,8 @@ const index=() =>{
         <Route exact path="/decide" element={<DecideForm/>}></Route>
          <Route exact path="/Home" element={<Home/>}></Route>  
             <Route exact path="/aboutus" element={<AboutUs/>}></Route>
-            <Route exact path="/dashboard" element={<Dashboard/>}></Route>    
+            <Route exact path="/dashboard" element={<Dashboard/>}></Route> 
+              
         </Routes>
         </HomeLayout>
       
