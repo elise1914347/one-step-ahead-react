@@ -21,7 +21,9 @@ const About = () => {
     <>
     <div>
       <div className="images">
-        <h1 style={{color:"white",marginLeft:"160px",paddingTop:"190px"}}>One step Ahead is the world's largest therapy platform</h1>
+      <marquee width="100%" direction="left" height="80rem"style={{color: "coral",paddingTop:"40px",fontSize:"30px",textAlign:"center",  textShadow: "-1px 0 black, 0 1px yellow, 1px 0 green, 0 -1px blue"}}>
+      One step Ahead is the world's largest therapy platform
+</marquee>
       </div>
       <section>
         <p style={{ color: "green", textAlign: "center", fontSize: "20px" }}>

@@ -28,11 +28,11 @@ const Contact = () => {
   };
   return (
     <>
+    <div className="yeh">
       <div className="contact">
         <h1 className="ct">ContactUs</h1>
       </div>
-      <div className="yeh">
-        <h2 style={{ color: "black", fontSize: "10px", marginLeft: "8%" }}>
+        <h2 style={{ color: "black", fontSize: "10px", marginLeft: "8%",marginTop:"12px" }}>
           Do you have a question, concern, idea, feedback, or problem? Take a
           look at our frequently asked questions for some quick answers. If you
           still<br></br>

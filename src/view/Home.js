@@ -82,22 +82,7 @@ const Home = () => {
         </div>
 
 
-      <div className="Header">
-        <img
-          src={img}
-          alt=""
-          style={{
-            minHeight: "100vh",
-            width: "100%",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            position: "relative",
-            backgroundImage:
-              "linear-gradient(rgba(24, 21, 21, 0.418), rgba(16, 18, 27, 0.7))",
-          }}
-        />  
-           
-      </div>
+      
       </div>
 
   
