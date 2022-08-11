@@ -7,7 +7,11 @@ import pic from "../asset/Images/t1.jpg";
 import picture from "../asset/Images/t4.jpg";
 import therapy from "../asset/Images/t6.jpg";
 import img from "../asset/Images/home2.jpg";
-// import  "../view/Home.css";
+
+
+
+import  "../view/home.css";
+
 
 
 const Home = () => {
@@ -95,7 +99,10 @@ const Home = () => {
            
       </div>
       </div>
+
   
+
+
     </>
     );
 };
