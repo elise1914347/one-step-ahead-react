@@ -19,6 +19,7 @@ import Contact from "../view/contactUs"
 
 
 
+
 const index=() =>{
     return (
         <>
@@ -44,7 +45,7 @@ const index=() =>{
             <Route exact path="/contactUs" element={<Contact/>}></Route>
 
             <Route exact path="/dashboard" element={<Dashboard/>}></Route>   
-            <Route exact path="/question" element={<Question1/>}></Route>
+            {/* <Route exact path="/question" element={<Question1/>}></Route> */}
             
             <Route exact path="/dashboard" element={<Dashboard/>}></Route>    
 
