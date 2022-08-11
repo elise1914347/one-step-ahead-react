@@ -86,7 +86,7 @@ const About = () => {
           than<br></br>I was before."<br></br>
           <h6 style={{ marginLeft: "80px", color: "green" }}>ReadMore</h6>
         </h1>
-        <h2 className="allworld">
+        <h2 className="allworld" >
           "I have now been working with Sheilah on BetterHelp for about 4 weeks
           <br></br>
           and can confidently say that I am a lot less anxious about my career
@@ -95,14 +95,14 @@ const About = () => {
           than<br></br>I was before."<br></br>
           <h6 style={{ marginLeft: "80px", color: "green" }}>ReadMore</h6>
         </h2>
-        <h3 className="allworld">
+        <h3 className="allworld"style={{ marginLeft: "700px"}}>
           "I have now been working with Sheilah on BetterHelp for about 4 weeks
           <br></br>
           and can confidently say that I am a lot less anxious about my career
           <br></br>
           path now than when I first signed up...I am so much better off now
           than<br></br>I was before."<br></br>
-          <h6 style={{ marginLeft: "80px", color: "green" }}>ReadMore</h6>
+          <h6 style={{ marginLeft: "100px", color: "green" }}>ReadMore</h6>
         </h3>
         <div className="button-read">
           <Button>SeeMorestories</Button>

@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0px;
+}
+.contact{
+    background-image: url("../asset/Images/t1.jpg");
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 2%; */
+    width: 100%;
+    height: 32rem;
+}
+.ct{
+    color: white;
+    margin-left: 46%;
+    padding-top: 25rem;
+}
+.questions{
+    margin-left: 9%;
+    position: relative;
+}
+.formLabe{
+    margin-left:  5%;
+    /* background-color: rgb(10, 10, 85); */
+    margin-right: 3%;
+    
+    padding-top: 0;
+    /* position: absolute; */
+    bottom: 10px;
+
+
+}
+.yeh{
+    background-color: rgb(238, 220, 198);
+}
+.bne{
+    margin-left: 15rem;
+    /* background-color: rgb(25, 25, 114); */
+}
