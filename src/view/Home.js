@@ -10,6 +10,15 @@ import therapy from "../asset/Images/t6.jpg";
 
 
 
+import img from "../asset/Images/home2.jpg";
+
+
+
+import  "../view/home.css";
+
+
+
+
 const Home = () => {
   return (
     <>
@@ -85,8 +94,13 @@ const Home = () => {
           <img src="https://dy7glz37jgl0b.cloudfront.net/home/betterhelp/full-session.png?v=966d54b722cb" alt="" style={{marginLeft:"500px"}}></img>  
         </div>
       </div>
+      </div>
+
+  
+
+
     </>
-  );
+    );
 };
 
 export default Home;
