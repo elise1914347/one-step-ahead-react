@@ -54,6 +54,10 @@
   margin-right: auto;
   /* width: 50%; */
 
+
+/* home */
+
+
 }
 .therapy{
     float: right;
@@ -197,6 +201,30 @@ color: white;
 .btn button{
     background: green;
 }
+
+/* request therapy */
+
+.request{
+    background-image: url("../../asset/Images/login4.jpg");
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+}
+input{
+    color: gray;
+}
+/* getstartedform */
+.getstart{
+    background-image: url("../../asset/Images/better1.jpg");
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 80vh;
 .corousel-img{
     width:28%;
     margin: 0 auto;
@@ -223,4 +251,5 @@ color: white;
 }
 .cardgrid{
     background-color: rgb(236, 175, 32);
+
 }

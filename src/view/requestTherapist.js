@@ -1,16 +1,24 @@
 import React from "react";
 import { Form, Input,Card, Button,Radio,Select} from 'antd';
+import "../Component/Navbar/Navbar.css";
 const AskTherapist =()=>{
     return(
+      <>
+       <div className="request">
 
-            <Card style={{width:"70%" }}>
+            <Card style={{width:"40%",margin:"0 auto",paddingTop:"5rem",marginTop:"1rem" }}>
+           
                 <Form>
+                  
        <Form.Item label="First-Name">
         <Input  />
       </Form.Item>
       <Form.Item label="Last-Name">
         <Input  />
         </Form.Item>
+        <Form.Item label="Email">
+        <Input style={{background:"g",}}  />
+      </Form.Item>
         <Form.Item label="Location">
         <Input  />
       </Form.Item>
@@ -39,12 +47,14 @@ const AskTherapist =()=>{
         </Form.Item>
      
       <Form.Item >
-        <Button style={{background:"gray"}}>Request</Button>
+        <Button style={{background:"rgb(2, 12, 68)",color:"white"}}>Request</Button>
       </Form.Item>
       </Form>
+
       </Card>
-      
-        
+      </div>
+    
+      </>
 
 
     )
