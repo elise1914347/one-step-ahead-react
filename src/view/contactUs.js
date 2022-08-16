@@ -39,8 +39,9 @@ const Contact = () => {
           need assistance, please fill out the form below and we'd be happy to
           help!
         </h2>
+        <h3 style={{ marginLeft: "5%" }}>Type of contact</h3>
         <div className="cnts">
-          <h3 style={{ marginLeft: "5%" }}>Type of contact</h3>
+          
           <div className="questions">
             <input type="radio" value="" name="" /> I am a registered client and
             I need support.
@@ -63,7 +64,7 @@ const Contact = () => {
             <input type="radio" value="" name="" />
             I'm interested in onestepAhead for my organization.
           </div>
-        </div>
+        
 
         <div className="formLabe">
           <Form
@@ -108,7 +109,7 @@ const Contact = () => {
           <TextArea rows={4} style={{ width: "30rem", marginLeft: "40px" }} />
 
             <div className="bne">
-              <Button style={{ marginRight: "60px", backgroundColor: "blue",marginTop:"10px",color:"black" }}>
+              <Button className="cbt" style={{ marginRight: "60px",marginTop:"10px",color:"black" }}>
                 Submit
               </Button>
             </div>
@@ -118,6 +119,7 @@ const Contact = () => {
               immediate help.
             </h1>
           </Form>
+          </div>
         </div>
       </div>
     </>

@@ -13,6 +13,7 @@ const QuestOne = () => {
           padding: "2%",
           marginTop: "1rem",
           backgroundColor: "rgb(242, 234, 234)",
+          borderRadius:"10px",
         }}
       >
         <h3>Create your private account</h3>
