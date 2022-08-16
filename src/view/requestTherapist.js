@@ -17,7 +17,7 @@ const AskTherapist =()=>{
         <Input  />
         </Form.Item>
         <Form.Item label="Email">
-        <Input style={{background:"g",}}  />
+        <Input   />
       </Form.Item>
         <Form.Item label="Location">
         <Input  />

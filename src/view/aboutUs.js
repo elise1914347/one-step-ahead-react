@@ -19,9 +19,9 @@ const About = () => {
   //   console.log('Received values of form: ', values);
   return (
     <>
-    <div>
+    <div  className="ght">
       <div className="images">
-      <marquee width="100%" direction="left" height="80rem"style={{color: "coral",paddingTop:"40px",fontSize:"30px",textAlign:"center",  textShadow: "-1px 0 black, 0 1px yellow, 1px 0 green, 0 -1px blue"}}>
+      <marquee width="100%" direction="left" height="80rem"style={{color: "white",paddingTop:"40px",fontSize:"30px",textAlign:"center",  textShadow: "-1px 0 black, 0 1px yellow, 1px 0 green, 0 -1px blue"}}>
       One step Ahead is the world's largest therapy platform
 </marquee>
       </div>
@@ -73,6 +73,7 @@ const About = () => {
       <p style={{ color: "green", textAlign: "center", fontSize: "20px" }}>
         our Success stories
       </p>
+      <div className="gryia">
       <Card className="cardgrid">
         <div className="our">
           <img src={Success} className="Success" />
@@ -97,7 +98,7 @@ const About = () => {
           than<br></br>I was before."<br></br>
           <h6 style={{ marginLeft: "80px", color: "green" }}>ReadMore</h6>
         </h2>
-        <h3 className="allworld"style={{ marginLeft: "700px"}}>
+        <h3 className="allworld">
           "I have now been working with Sheilah on BetterHelp for about 4 weeks
           <br></br>
           and can confidently say that I am a lot less anxious about my career
@@ -131,10 +132,12 @@ const About = () => {
           <img
             src="https://dy7glz37jgl0b.cloudfront.net/about/team-julie-laura-3.jpg?v=966d54b722cb"
             alt=""
+            style={{ width: "30rem" }}
           ></img>
           <img
             src="https://dy7glz37jgl0b.cloudfront.net/about/team-victoria-aaron.jpg?v=966d54b722cb"
             alt=""
+            style={{ width: "36rem", padding: "3rem" }}
           ></img>
           <img
             src="https://dy7glz37jgl0b.cloudfront.net/about/team-julie-nick-omer.jpg?v=966d54b722cb"
@@ -241,6 +244,7 @@ const About = () => {
           Visit Us
         </Button>
       </Card>
+      </div>
       </div>
     </>
   );

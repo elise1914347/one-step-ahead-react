@@ -1,0 +1,23 @@
+:root{
+    --primary:#1888ff;
+}
+.btn{
+    padding: 15px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 10px;
+    color: #fff;
+    cursor: pointer;
+    background-color:var(--primary);
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.btn:hover{
+    padding: 10px 18px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color:yellow;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+}
