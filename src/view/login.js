@@ -4,26 +4,11 @@ import React from 'react';
 import "../Component/Navbar/Navbar.css";
 
 const Login= () => {
-  // const onFinish = (values) => {
-  //   console.log('Received values of form: ', values);
-  // };
-
   return (
-    <>
-     <div className="image" style={{width:"45%" }}>
-        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-     
-    {/* <Card style={{width:"40%"}}> */}
    
-    {/* <Form
-      name="normal_login"
-      className="login-form"
-      initialValues={{
-        remember: true,
-      }}
-      onFinish={onFinish}
-    >
-         */}
+    <>
+     <div className="requesto">
+     <div  style={{width:"45%",marginLeft:"40rem",paddingTop:"100px" }}>
       <Form.Item
         name="username"
         rules={[
@@ -62,13 +47,14 @@ const Login= () => {
       </Form.Item>
 
       <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button">
+        <Button type="primary" htmlType="submit" className="login-form-button" style={{marginLeft:"20rem"}}>
           Log in
         </Button>
         {/* Or <a href="">register now!</a> */}
       </Form.Item>
       {/* </Form> */}
     {/* </Card> */}
+    </div>
     </div>
     </>
   );
