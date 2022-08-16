@@ -4,7 +4,6 @@ import stress from "../asset/stress.webp";
 import relationship from "../asset/relationship.webp";
 import { useNavigate } from "react-router-dom";
 import "./Getstarted.css";
-// import getbgimg from "../asset/getstarted-bg.jpg";
 import { Form, Input, InputNumber, Card } from "antd";
 
 const GetStarted = () => {
@@ -22,7 +21,8 @@ const GetStarted = () => {
 
   return (
     <>
-      <div style={{textAlign:"center",paddingLeft:"25rem",paddingRight:"25rem",gap:"2rem"}}>
+    <div className="bodygetstart1">
+      <div style={{textAlign:"center",paddingLeft:"25rem",paddingRight:"25rem",gap:"2rem"}} >
         <h1>Help us match you to the <span style={{color:"blueviolet"}}>right therapist</span></h1>
         <p style={{fontSize:"16px"}}>
            Please fill out this short
@@ -33,12 +33,8 @@ const GetStarted = () => {
         </p>
       </div>
       <div className="container">
-        <Card classname="card">
           <Form className="form">
-            <Form.Item
-              label="would you allow your partern to join?"
-              className="label"
-            ></Form.Item>
+            
             <div className="input">
               <Form.Item label="">
                 <button
@@ -65,30 +61,26 @@ const GetStarted = () => {
                   style={{ fontSize: "15px", color: "white" }}
                 >
                   Not sure yet(decide later)
-                </button>
+                </button> 
               </Form.Item>
             </div>
-            <Form.Item
-              label="we'll match you to the Therapist that can help you"
-              className="label"
-              style={{ padding: "25px" }}
-            ></Form.Item>
           </Form>
-        </Card>
+          <h3>we'll match you to the Therapist that can help you"</h3>
         <div className="image">
           <div>
-            <h4 style={{ paddingLeft: "5px",color:"#06062bf7" }}>Depression</h4>
+            <h4 style={{ color:"#06062bf7" }}>Depression</h4>
             <img src={depression} className="image1" />
           </div>
           <div>
-            <h4 style={{ paddingLeft: "5px",color:"#06062bf7" }}>Stress</h4>
+            <h4 style={{color:"#06062bf7" }}>Stress</h4>
             <img src={stress} className="image1" />
           </div>
           <div>
-            <h4 style={{ paddingLeft: "5px",color:"#06062bf7" }}>Relationship</h4>
+            <h4 style={{color:"#06062bf7" }}>Relationship</h4>
             <img src={relationship} className="image1" />
           </div>
         </div>
+      </div>
       </div>
     </>
   );

@@ -1,14 +1,34 @@
 import React, { useState } from "react";
-import { Form, Input, InputNumber, Card } from "antd";
+import { Form, Input, InputNumber, Card, Carousel } from "antd";
 import QuestOne from "../Component/questions/question1";
 import QuestTwo from "../Component/questions/question2";
 import QuestThree from "../Component/questions/question3";
+import QuestFour from "../Component/questions/question4";
+import QuestFive from "../Component/questions/question5";
+import QuestSix from "../Component/questions/question6";
+import QuestSeven from "../Component/questions/question7";
+import QuestConfirm from "../Component/questions/questconfirm";
+import GetAccount from "../Component/questions/GetAccount";
+import Getimage from "../asset/profilepic.webp";
+import Getimage2 from "../asset/profilepic_2.jpg";
+import "./Getstarted.css";
 
-const DecideForm =()=>{
-    const [questIndex, setQuestIndex] = useState(0);
-    const questForm = [{ Quest: <QuestOne /> }, { Quest: <QuestTwo /> },{Quest: <QuestThree />}];
-    return (
-      <>
+const DecideForm = () => {
+  const [questIndex, setQuestIndex] = useState(0);
+  const questForm = [
+    { Quest: <QuestOne /> },
+    { Quest: <QuestTwo /> },
+    { Quest: <QuestThree /> },
+    { Quest: <QuestFour /> },
+    { Quest: <QuestFive /> },
+    { Quest: <QuestSix /> },
+    { Quest: <QuestSeven /> },
+    { Quest: <QuestConfirm /> },
+    { Quest: <GetAccount /> },
+  ];
+  return (
+    <>
+      <div className="bodygetstart">
         <div
           style={{
             textAlign: "center",
@@ -29,17 +49,32 @@ const DecideForm =()=>{
             point in getting to know you.
           </p>
         </div>
-        <div className="couple" style={{background:"../asset/getstarted-bg.jpg"}}>
+        <div
+          className="couple"
+          style={{ background: "../asset/getstarted-bg.jpg" }}
+        >
           <Card classname="couple-card">
             {questForm[questIndex].Quest}
             <Form className="couple-form">
-              <div className="couple-input" style={{display:"flex",gap:"1rem", marginLeft:"70rem"}}>
-                
-              <Form.Item label="">
+              <div
+                className="couple-input"
+                style={{ display: "flex", gap: "1rem", marginLeft: "70rem" }}
+              >
+                <Form.Item label="">
                   <button
                     className="couple-inputB"
-                    style={{ fontSize: "12px",backgroundColor:"#06062bf7",color: "white",width:"50px",height:"20px",textAlign:"center",borderRadius:"10px"}}
-                    onClick={() => {questIndex > 0 && setQuestIndex(questIndex - 1);
+                    style={{
+                      fontSize: "15px",
+                      backgroundColor: "black",
+                      color: "white",
+                      width: "55px",
+                      height: "23px",
+                      borderRadius: "10px",
+                      textAlign:"center",
+                      // padding:"1rem 1rem 1rem 1rem",
+                    }}
+                    onClick={() => {
+                      questIndex > 0 && setQuestIndex(questIndex - 1);
                     }}
                   >
                     Prev
@@ -48,7 +83,16 @@ const DecideForm =()=>{
                 <Form.Item label="">
                   <button
                     className="couple-inputB"
-                    style={{ fontSize: "12px",backgroundColor:"#06062bf7",color: "white",width:"50px",height:"20px",textAlign:"center",borderRadius:"10px"}}
+                    style={{
+                      fontSize: "15px",
+                      backgroundColor: "black",
+                      color: "white",
+                      width: "55px",
+                      height: "23px",
+                      borderRadius: "10px",
+                      textAlign:"center",
+                      // padding:"1rem 1rem 1rem 1rem",
+                    }}
                     onClick={() => {
                       questIndex < questForm.length &&
                         setQuestIndex(questIndex + 1);
@@ -65,7 +109,64 @@ const DecideForm =()=>{
             </Form>
           </Card>
         </div>
-      </>
-    );
-    }
-    export default DecideForm;
+      </div>
+
+      <div
+        style={{
+          align: "center",
+          borderTopLeftRadius: "60% 60%",
+          padding: "2rem",
+          borderTopRightRadius: "60% 60%",
+          borderTopColor: "#06062bf7",
+          backgroundColor: "whitesmoke",
+        }}
+      >
+        <Carousel autoplay style={{ marginLeft: "35%", marginRight: "25%" }}>
+          <div>
+            <div style={{ display: "flex", gap: "5rem" }}>
+              <img
+                src={Getimage}
+                style={{ borderRadius: "100%", height: "6rem", width: "6rem" }}
+              />
+              <div >
+                <h5>Latest Review For</h5>
+                <h4 style={{ color: "green" }}>DUSENGE FABIOLA</h4>
+              </div>
+            </div>
+            <div style={{marginTop:"2rem"}}>
+              <p style={{ marginLeft: "2rem" }}>N.I. wrote 2 days ago</p>
+              <p style={{ fontSize: "15px" }}>
+                My experience have been fulfilling and healing
+                <br />I like Jessica she is my therapist but i feel like she is
+                my best friend
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div style={{ display: "flex", gap: "5rem" }}>
+              <img
+                src={Getimage2}
+                style={{ borderRadius: "100%", height: "6rem", width: "6rem" }}
+              />
+              <div >
+                <h5>Latest Review For</h5>
+                <h3 style={{ color: "green" }}>Hailla Jack</h3>
+              </div>
+            </div>
+            <div style={{marginTop:"2rem"}}>
+              <p style={{ marginLeft: "2rem" }}>H.J. wrote 3 days ago</p>
+              <p style={{ fontSize: "15px" }}>
+                My experience have been fulfilling and healing
+                <br />I like patric! he has helped me in different aspect of my
+                healing and my journey. he is my therapist but i feel like she is my best
+                friend
+              </p>
+            </div>
+          </div>
+        </Carousel>
+      </div>
+    </>
+  );
+};
+export default DecideForm;

@@ -17,15 +17,15 @@ const QuestOne = () => {
         >
           <Form>
             <Form.Item>
-              <p>what is your relationship status?</p>
-              <Select placeholder="what is your relationship status?">
-                <Select.Option value="C">in a relationship</Select.Option>
-                <Select.Option value="M">married</Select.Option>
-                <Select.Option value="M">separated</Select.Option>
-                <Select.Option value="P">divorced</Select.Option>
-                <Select.Option value="P">widowed</Select.Option>
-                <Select.Option value="P">single</Select.Option>
-                <Select.Option value="P">others</Select.Option>
+              <p>which religion do you identify with?</p>
+              <Select
+                placeholder="which religion do you identify with?"
+                style={{ color: "black", fontStyle: "bold" }}
+              >
+                <Select.Option value="C">Christianity</Select.Option>
+                <Select.Option value="M">Judaism</Select.Option>
+                <Select.Option value="M">Islam</Select.Option>
+                <Select.Option value="P">Others</Select.Option>
               </Select>
             </Form.Item>
             <Card
@@ -38,10 +38,9 @@ const QuestOne = () => {
             >
               <p>
                 <InfoCircleOutlined style={{ fontSize: "25px" }} />
-                <b>Did you know?</b>
-                <br />
-                most of people in africa experience depression.(Geriatric Mental
-                Health Foundation, 2008)
+                Therapist on one step ahead platform have diverse
+                background.you'll be able to request a Christian therapist if
+                needed.
               </p>
             </Card>
           </Form>

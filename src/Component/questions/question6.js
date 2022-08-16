@@ -17,14 +17,17 @@ const QuestOne = () => {
         }}
       >
         <formItem>
-          <p style={{ color: "black" }}>select your gender</p>
+          <p style={{ color: "black" }}>
+            would you like to be matched with a therapist who provides
+            Christian-based-therapist
+          </p>
           <Radio.Group>
             <Radio value="w" style={{ color: "black" }}>
-              woman
+              Yes
             </Radio>
             <br></br>
             <Radio value="m" style={{ color: "black" }}>
-              man
+              no
             </Radio>
           </Radio.Group>
           <Card
@@ -36,9 +39,11 @@ const QuestOne = () => {
             }}
           >
             <p>
-              <InfoCircleOutlined style={{ fontSize: "25px" }} /> Let's walk
-              through the process of finding the best therapist for you! we'll
-              start off with some basic questions
+              <InfoCircleOutlined style={{ fontSize: "25px" }} />
+              <b>Did you know?</b>
+              <br />
+              most of people in africa experience depression.(Geriatric Mental
+              Health Foundation, 2008)
             </p>
           </Card>
         </formItem>

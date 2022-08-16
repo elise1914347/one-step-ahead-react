@@ -8,6 +8,36 @@ import {navLink } from "react-router-dom"
 
 
 
+// const Navbar= ()=>{
+//         return(
+//             <>
+//             <div className="nav">
+//                 <div>
+//                  <img src={logo} alt="One step a head" className="logo-img"/></div>
+//                  <div style={{marginLeft:"40%",padding:"10px",fontSize:"12px"}}>
+//                  <ul className="nav-links">
+//                    <li>
+//                        <a href="/home" className="nav-link">
+//                            Home
+//                            </a></li>
+//                            <li><a href="/aboutus" className="nav-link">
+//                                aboutUs
+//                                </a></li>
+//                                <li><a href="ContactUs" className="nav-link">
+//                                    ContactUs
+//                                    </a></li>
+//                                    <li><a href="/therapist" className="nav-link">
+//                                            Therapistjob
+//                                            </a></li>
+//                                            <li><a href="/login" className="nav-link">
+//                                            LogIn
+//                                            </a></li>
+//                                            <li><a href="/start" className="nav-link">
+//                                            GetStarted
+//                                            </a></li>
+// =======
+// >>>>>>> ee7f01552ca107906bfc93829d6920c4c7b85e52
+
 function Navbar(){
     const[click,setClick]=useState(false)
     const handleClick=()=>setClick(!click)
