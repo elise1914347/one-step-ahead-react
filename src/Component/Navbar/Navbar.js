@@ -21,8 +21,8 @@ const Navbar= ()=>{
                                <li><a href="ContactUs" className="nav-link">
                                    ContactUs
                                    </a></li>
-                                   <li><a href="Review" className="nav-link">
-                                           Review
+                                   <li><a href="/therapist" className="nav-link">
+                                           Therapistjob
                                            </a></li>
                                            <li><a href="/login" className="nav-link">
                                            LogIn

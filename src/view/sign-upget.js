@@ -1,9 +1,12 @@
 import React from "react";
 import { Form, Input,Card, Button,Radio} from 'antd';
+import "../Component/Navbar/Navbar.css";
+
 const Register =()=>{
     return(
 <>
-            <Card style={{width:"70%" }}>
+<div className="getstart">
+            <Card style={{width:"40%",margin:"0 auto",paddingTop:"5rem",marginTop:"1rem" }}>
                 <Form>
        <Form.Item label="First-Name">
         <Input  />
@@ -29,10 +32,11 @@ const Register =()=>{
         </Form.Item>
      
       <Form.Item >
-        <Button style={{background:"gray"}}>Get started</Button>
+        <Button style={{background:"rgb(2, 12, 68)",color:"white"}}>Get started</Button>
       </Form.Item>
       </Form>
       </Card>
+      </div>
       
       </>
 
