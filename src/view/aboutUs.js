@@ -127,7 +127,7 @@ const About = () => {
         </h3>
         <div
           className="image-carousel"
-          style={{ width: "100rem", padding: "1.5rem" }}
+          style={{ width: "100rem", padding: "1.5rem",marginLeft:"8rem" }}
         >
           <img
             src="https://dy7glz37jgl0b.cloudfront.net/about/team-julie-laura-3.jpg?v=966d54b722cb"
@@ -196,7 +196,7 @@ const About = () => {
           <img
             src="https://dy7glz37jgl0b.cloudfront.net/about/support-bonnie-sonya.jpg?v=966d54b722cb"
             alt=""
-            style={{ width: "30rem" }}
+            style={{ width: "30rem",marginLeft:"10rem" }}
           ></img>
           <img
             src="https://dy7glz37jgl0b.cloudfront.net/about/support-laura-2.jpg?v=966d54b722cb"
@@ -227,7 +227,7 @@ const About = () => {
           <img
             src="https://dy7glz37jgl0b.cloudfront.net/about/office-1.jpg?v=966d54b722cb"
             alt=""
-            style={{ width: "30rem" }}
+            style={{ width: "30rem",marginLeft:"10rem"  }}
           ></img>
           <img
             src="https://dy7glz37jgl0b.cloudfront.net/about/office-4.jpg?v=966d54b722cb"
