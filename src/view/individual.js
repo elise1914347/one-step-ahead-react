@@ -37,11 +37,11 @@ const IndividualForm = () => {
             gap: "2rem",
           }}
         >
-          <h1>
+          <h1 style={{color:"white"}}>
             Help us match you to the{" "}
-            <span style={{ color: "blueviolet" }}>right therapist</span>
+            <span style={{ color: "yellow" }}>right therapist</span>
           </h1>
-          <p style={{ fontSize: "17px" }}>
+          <p style={{ fontSize: "17px",color:"black" }}>
             Please fill out this short questionnaire to provide some background
             information about you and the issues you'd like to deal with in
             therapy. It would help us match you with the most suitable therapist
@@ -117,8 +117,8 @@ const IndividualForm = () => {
           borderTopLeftRadius: "60% 60%",
           padding: "2rem",
           borderTopRightRadius: "60% 60%",
-          borderTopColor: "#06062bf7",
-          backgroundColor: "whitesmoke",
+          borderTopColor: "#10103bf7",
+          backgroundColor: "#10103bf7",
         }}
       >
         <Carousel autoplay style={{ marginLeft: "35%", marginRight: "25%" }}>
@@ -129,13 +129,13 @@ const IndividualForm = () => {
                 style={{ borderRadius: "100%", height: "6rem", width: "6rem" }}
               />
               <div >
-                <h5>Latest Review For</h5>
-                <h4 style={{ color: "green" }}>DUSENGE FABIOLA</h4>
+                <h5 style={{color:"white"}}>Latest Review For</h5>
+                <h4 style={{ color: "yellow" }}>DUSENGE FABIOLA</h4>
               </div>
             </div>
             <div style={{marginTop:"2rem"}}>
-              <p style={{ marginLeft: "2rem" }}>N.I. wrote 2 days ago</p>
-              <p style={{ fontSize: "15px" }}>
+              <p style={{ marginLeft: "2rem",color:"white" }}>N.I. wrote 2 days ago</p>
+              <p style={{ fontSize: "15px",color:"white"}}>
                 My experience have been fulfilling and healing
                 <br />I like Jessica she is my therapist but i feel like she is
                 my best friend
@@ -150,13 +150,13 @@ const IndividualForm = () => {
                 style={{ borderRadius: "100%", height: "6rem", width: "6rem" }}
               />
               <div >
-                <h5>Latest Review For</h5>
-                <h3 style={{ color: "green" }}>Hailla Jack</h3>
+                <h5 style={{color:"white"}}>Latest Review For</h5>
+                <h3 style={{ color: "yellow" }}>Hailla Jack</h3>
               </div>
             </div>
             <div style={{marginTop:"2rem"}}>
-              <p style={{ marginLeft: "2rem" }}>H.J. wrote 3 days ago</p>
-              <p style={{ fontSize: "15px" }}>
+              <p style={{ marginLeft: "2rem",color:"white"}}>H.J. wrote 3 days ago</p>
+              <p style={{ fontSize: "15px",color:"white"}}>
                 My experience have been fulfilling and healing
                 <br />I like patric! he has helped me in different aspect of my
                 healing and my journey. he is my therapist but i feel like she is my best

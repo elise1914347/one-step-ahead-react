@@ -4,7 +4,7 @@
 }
 .contact{
   
-    background-image: url("../asset/Images/depressio.jpg");
+    background-image:url("../asset/Images/depressio.jpg");
     background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
@@ -13,9 +13,9 @@
     height: 30rem;
 }
 .ct{
-    color: white;
     margin-left: 46%;
     padding-top: 25rem;
+ color: rgb(163, 163, 50);
 }
 .questions{
     margin-left: 3rem;

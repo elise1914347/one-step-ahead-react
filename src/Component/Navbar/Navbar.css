@@ -1,4 +1,16 @@
 
+.Upload{
+  margin-left: 40px;
+}
+.stikle{
+ text-align: center;
+ font-size: 30px;
+ background-image: linear-gradient(to right,rgb(207, 100, 105),rgb(202, 202, 52),rgb(89, 196, 19));
+ color: transparent;
+ -webkit-background-clip: text;
+ padding-top: 50px;
+
+}
 .container{
     background-image: url("../../asset/Images/images.jpg");
     background: no-repeat;
@@ -15,28 +27,19 @@
 .our{
     margin-left: 2rem;
 }
-/* .gryia{
-    background-color: gray;
-} */
 .photo-container{
         width: 18rem;
         display:flex;
         gap:1.5rem;
-        /* margin-left: auto; */
   margin-right: auto;
-  /* width: 50%; */
-
-
-/* home */
-
-
 }
 .therapy{
     float: right;
     width: 180px;
 }
+
 .images{
-    background-image: url("../../asset/Images/AdobeStock.jpeg");
+    background-image:  linear-gradient(rgba(24, 21, 21, 0.418), rgba(16, 18, 27, 0.7)),url("../../asset/Images/AdobeStock.jpeg");
     background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
@@ -86,6 +89,10 @@ h3{
     color:white;
     text-align: center;  
     padding-top: 40px; 
+    background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(253, 253, 249),rgb(254, 255, 253));
+    color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 50px;
 }
 .ther{
     width: 100px;
@@ -221,18 +228,8 @@ Card .cardgrid{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
-  
-  /* .Navbar-logo {
-    color: #fff;
-    justify-self: start;
-    margin-left: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-  } */
-  
   .fa-firstdraft {
     margin-left: 0.5rem;
     font-size: 1.6rem;
@@ -247,6 +244,7 @@ Card .cardgrid{
     width: 70vw;
     justify-content: end;
     margin-left: 10rem;
+    font-size:  2.4rem;
   }
   
   .nav-item {

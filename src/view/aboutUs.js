@@ -1,7 +1,7 @@
-import React from "react";
+import React,{useState} from "react";
 import HomeLayout from "../Component/Homelayout";
 import "../Component/Navbar/Navbar.css";
-import { Button, Card,Form,Space,Input,Tooltip,Typography} from "antd";
+import { Button, Card,Form,Space,Input,Tooltip,Typography,Drawer} from "antd";
 import { Carousel } from "antd";
 import Photo from "../asset/Images/download.jpg";
 import Photos from "../asset/Images/Grow.jpg";
@@ -11,19 +11,22 @@ import Success from "../asset/Images/ryan-success.jpg";
 import Successe from "../asset/Images/ghita-success.jpg";
 import Successy from "../asset/Images/laura-success.jpg";
 import el from "../asset/Images/23.jpg";
+import UploadStory from "../Component/AploadStory";
 
 
 
 const About = () => {
+  const [showDrawer,setShowDrawer]=useState(false)
+  const[AploadStory,setAploadStory]=useState()
   // const onFinish = (values) => {
   //   console.log('Received values of form: ', values);
   return (
     <>
     <div  className="ght">
       <div className="images">
-      <marquee width="100%" direction="left" height="80rem"style={{color: "white",paddingTop:"40px",fontSize:"30px",textAlign:"center",  textShadow: "-1px 0 black, 0 1px yellow, 1px 0 green, 0 -1px blue"}}>
+      <h1 className="stikle">
       One step Ahead is the world's largest therapy platform
-</marquee>
+</h1>
       </div>
       <section>
         <p style={{ color: "green", textAlign: "center", fontSize: "20px" }}>
@@ -74,7 +77,7 @@ const About = () => {
         our Success stories
       </p>
       <div className="gryia">
-      <Card className="cardgrid">
+      <Card className="cardgrid" style={{margin:"0 auto",width:"100%"}}>
         <div className="our">
           <img src={Success} className="Success" />
           <img src={Successe} className="Success" />
@@ -110,7 +113,12 @@ const About = () => {
         <div className="button-read">
           <Button>SeeMorestories</Button>
           <Button>tellmoreForm</Button>
+          <Button onClick={()=>{
+            setShowDrawer(true)
+          }}>add Your story</Button>
         </div>
+        <Drawer title="AddYourStory" placement="right" visible={showDrawer}
+        onClose={()=>{setShowDrawer(false)}}><UploadStory></UploadStory></Drawer>
       </Card>
       <br></br>
       <Card>
@@ -151,19 +159,8 @@ const About = () => {
       wrapperCol={{
         span: 16,
       }}
-    >
-      <Form.Item label="Username">
+     style={{marginLeft:"40rem"}}>
         <Space>
-          <Form.Item
-            name="username"
-            noStyle
-            rules={[
-              {
-                required: true,
-                message: 'Username is required',
-              },
-            ]}
-          >
             <Input
               style={{
                 width: 150,
@@ -171,12 +168,11 @@ const About = () => {
               }}
               placeholder="Stories"
             />
-          </Form.Item>
+          
           <Tooltip title="Useful information">
             <Typography.Link href="#API">Need Help?</Typography.Link>
           </Tooltip>
         </Space>
-      </Form.Item>
       </Form>
         </div>
         <Button className="button-read" style={{ color: "green" }}>

@@ -1,10 +1,13 @@
+
 import React from "react";
+
 import depression from "../asset/depression.webp";
 import stress from "../asset/stress.webp";
 import relationship from "../asset/relationship.webp";
 import { useNavigate } from "react-router-dom";
 import "./Getstarted.css";
-import { Form, Input, InputNumber, Card } from "antd";
+import { Form, Input, InputNumber, Card,Carousel } from "antd";
+
 
 const GetStarted = () => {
   const navigate = useNavigate();
@@ -23,8 +26,8 @@ const GetStarted = () => {
     <>
     <div className="bodygetstart1">
       <div style={{textAlign:"center",paddingLeft:"25rem",paddingRight:"25rem",gap:"2rem"}} >
-        <h1>Help us match you to the <span style={{color:"blueviolet"}}>right therapist</span></h1>
-        <p style={{fontSize:"16px"}}>
+        <h1 style={{color:"white"}}>Help us match you to the <span style={{color:"yellow"}}>right therapist</span></h1>
+        <p style={{fontSize:"16px",color:"white",marginTop:"30px"}}>
            Please fill out this short
           questionnaire to provide some background information about you and the
           issues you'd like to deal with in therapy. It would help us match you
@@ -65,8 +68,8 @@ const GetStarted = () => {
               </Form.Item>
             </div>
           </Form>
-          <h3>we'll match you to the Therapist that can help you"</h3>
-        <div className="image">
+          <h3  style={{color:"white",marginTop:"60px"}}>we'll match you to the Therapist that can help you"</h3>
+        {/* <div className="image">
           <div>
             <h4 style={{ color:"#06062bf7" }}>Depression</h4>
             <img src={depression} className="image1" />
@@ -79,8 +82,40 @@ const GetStarted = () => {
             <h4 style={{color:"#06062bf7" }}>Relationship</h4>
             <img src={relationship} className="image1" />
           </div>
-        </div>
+        </div> */}
       </div>
+      <div className="disya">
+      <Carousel autoplay style={{ marginLeft: "35%", marginRight: "25%" }}>
+          <div>
+            <div style={{ display: "flex", gap: "5rem" }}>
+              <img
+                src={stress}
+                style={{ borderRadius: "100rem", height: "6rem", width: "6rem" }}
+              />
+               <h4 style={{ color:"white" }}>Stress</h4>
+            </div>
+          </div>
+          <div>
+            <div style={{ display: "flex", gap: "5rem" }}>
+              <img
+                src={relationship}
+                style={{ borderRadius: "100%", height: "6rem", width: "6rem" }}
+              />
+                <h4 style={{ color:"white" }}>Relationship</h4>
+            </div>
+          </div>
+
+          <div>
+            <div style={{ display: "flex", gap: "5rem" }}>
+              <img
+                src={depression}
+                style={{ borderRadius: "100%", height: "6rem", width: "6rem" }}
+              />
+             <h4 style={{ color:"white" }}>Depression</h4>
+            </div>
+          </div>
+        </Carousel>
+        </div>
       </div>
     </>
   );
