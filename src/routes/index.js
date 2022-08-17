@@ -33,7 +33,7 @@ const index=() =>{
         <Route exact path="/signup" element={<Register/>}></Route>
         <Route exact path="/Home" element={<Home/>}></Route>    
         <Route exact path="/aboutus" element={<AboutUs/>}></Route>
-        <Route exact path="/start" element={<GetStarted/>}></Route>
+        <Route exact path="/GetStarted" element={<GetStarted/>}></Route>
         <Route exact path="/couple" element={<CoupleForm/>}></Route>
         <Route exact path="/individual" element={<IndividualForm/>}></Route>
         <Route exact path="/decide" element={<DecideForm/>}></Route> 

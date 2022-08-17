@@ -8,10 +8,11 @@ import Question4 from "../../Component/therapistquestion/therapistQ4";
 import Form1 from "../../Component/therapistquestion/therapistF1";
 import Question5 from "../../Component/therapistquestion/therapistQ5";
 import Form2 from "../../Component/therapistquestion/therapistF2";
+import Form3 from "../../Component/therapistquestion/therapistF3";
 
 const TherapistForm = () =>{
   const [questionIndex, setQuestionIndex] = useState(0);
-  const questionTherapist = [{Q1: <Question1/> }, { Q1: <Question2 /> },{Q1: <Question3/>},{Q1:<Question4/>},{Q1:<Question5/>},{Q1:<Form1/>},{Q1: <Form2/>}];
+  const questionTherapist = [{Q1: <Question1/> }, { Q1: <Question2 /> },{Q1: <Question3/>},{Q1:<Question4/>},{Q1:<Question5/>},{Q1:<Form1/>},{Q1: <Form2/>},{Q1: <Form3/>}];
     return(
         <>
         <div className="formtherapy">
