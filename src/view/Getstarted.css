@@ -16,7 +16,7 @@ body{
     background-repeat: no-repeat;
 }
 .bodygetstart1{
-    background-image: linear-gradient(rgba(24, 21, 21, 0.418), rgba(16, 18, 27, 0.7)), url("../asset/getstarted-bg.jpg");
+    background-image: linear-gradient(rgba(24, 21, 21, 0.418), rgba(16, 18, 27, 0.7)), url("../asset/Images/depressionhelp.jpg");
     background-size: cover;
     object-fit: cover;
     background-repeat: no-repeat;
@@ -70,6 +70,6 @@ body{
         padding: 2rem;
        border-top-right-radius: 60% 60%;
         border-top-color: #06062bf7;
-        background-color: #10103bf7
+        background-color:rgba(80, 79, 79, 0.616)
 
 }
