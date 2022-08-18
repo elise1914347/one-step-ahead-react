@@ -1,120 +1,58 @@
+
+
+
+
+
 import React, { useState } from "react";
+import "./Navbar.css";
 import Logo from "../../asset/Images/logo.jpg"
-import {Button} from "../Button";
-import { Link} from "react-router-dom"
-import './Navbar.css';
-import Dropdown from "./Dropdown";
-import {navLink } from "react-router-dom"
 
+function Navbar() {
+  const [active, setActive] = useState("nav__menu");
+  const navToggle = () => {
+    active === "nav__menu"
+      ? setActive("nav__menu nav__active")
+      : setActive("nav__menu");
+  };
 
-
-// const Navbar= ()=>{
-//         return(
-//             <>
-//             <div className="nav">
-//                 <div>
-//                  <img src={logo} alt="One step a head" className="logo-img"/></div>
-//                  <div style={{marginLeft:"40%",padding:"10px",fontSize:"12px"}}>
-//                  <ul className="nav-links">
-//                    <li>
-//                        <a href="/home" className="nav-link">
-//                            Home
-//                            </a></li>
-//                            <li><a href="/aboutus" className="nav-link">
-//                                aboutUs
-//                                </a></li>
-//                                <li><a href="ContactUs" className="nav-link">
-//                                    ContactUs
-//                                    </a></li>
-//                                    <li><a href="/therapist" className="nav-link">
-//                                            Therapistjob
-//                                            </a></li>
-//                                            <li><a href="/login" className="nav-link">
-//                                            LogIn
-//                                            </a></li>
-//                                            <li><a href="/start" className="nav-link">
-//                                            GetStarted
-//                                            </a></li>
-// =======
-// >>>>>>> ee7f01552ca107906bfc93829d6920c4c7b85e52
-
-function Navbar(){
-    const[click,setClick]=useState(false)
-    const handleClick=()=>setClick(!click)
-    const closeMobileMenu=()=>setClick(false)
-    const onMouseEnter =()=>{
-        if(window.innerWidth<960){
-            setDropdown(false)
-        } else{
-            setDropdown(true)
-        }
-    };
-    const onMouseLeave =()=>{
-        if(window.innerWidth<960){
-            setDropdown(false)
-        } else{
-            setDropdown(false)
-        }
-    };
-
-
-
-    const [dropdown,setDropdown]=useState(false)
-
-
-    return(
-        <>
-        <nav className="Navbar">
-        <navLink to="/">
+  return (
+    <nav className="nav">
+      <navLink to="/">
             <img src={require("../../asset/Images/logo.jpg")} alt="logo" className="navbar-logo"></img>
         </navLink>
-            <div className="menu-icon" onClick={handleClick}>
-                <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
-
-            <i class="fa fa-bars" aria-hidden="true"></i>
-
-            </div>
-            <ul className={click ? "nav-menu active": "nav-menu"}>
-                <li className="nav-item">
-                    <Link to='/Home' className="nav-links" onClick={closeMobileMenu}>
-                    Home
-                    </Link>
-                </li>
-                <li className="nav-item"
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
-                
-                >
-                    <Link to='/AboutUs' className="nav-links" onClick={closeMobileMenu}>
-                    AboutUs <i className="fas fa-caret-down"/>
-                    </Link>
-                    {dropdown && <Dropdown/>}
-                </li>
-                <li className="nav-item">
-                    <Link to="/contactUs" className="nav-links" onClick={closeMobileMenu}>
-                    contact Us
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/therapist" className="nav-links" onClick={closeMobileMenu}>
-                    TherapistJob
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/login" className="nav-links" onClick={closeMobileMenu}>
-                    Login
-                    </Link>
-                </li>
-
-                
-            </ul>
-            
-            <Button/>
-
-        </nav>
-        </>
-
-    )
-
+      <ul className={active}>
+        <li className="nav_item">
+          <a href="/Home" className="nav_link">
+            HOME
+          </a>
+        </li>
+        <li className="nav_item">
+          <a href="/aboutus" className="nav_link">
+            AboutUs
+          </a>
+        </li>
+        <li className="nav_item">
+          <a href="/contactUs" className="nav_link">
+            ContactUs
+          </a>
+        </li>
+        <li className="nav_item">
+          <a href="/GetStarted" className="nav_link">
+            GetStarted
+          </a>
+        </li>
+        <li className="nav_item">
+          <a href="/login" className="nav_link">
+            Login
+          </a>
+        </li>
+      </ul>
+      <div onClick={navToggle} className="nav__toggler">
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
+    </nav>
+  );
 }
 export default Navbar;
