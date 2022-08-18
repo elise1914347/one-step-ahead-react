@@ -1,37 +1,369 @@
-*{
-    margin: 0%;
-    padding: 0%;
+
+.Upload{
+  margin-left: 40px;
 }
-.logo-img{
-    width: 90px;
-    font-size: 10px;
-    object-fit: cover;
-    /* border-radius: 1rem; */
-    height: 4rem;
-    margin-left: 2rem;
-    margin-top: 0.5rem;
-}
-.nav-links{
-    display: flex;
-    gap: 1.5rem;
-    list-style-type:none;
-    float: right;
-    padding: 30px;
-}
-.nav-link:link,.nav-link:visited{
-    text-decoration: none;
-}
-.nav-link{
-    color: white;
-}
-.nav-link:hover{
-    color: rgba(255, 255, 0, 0.829);
-}
-.nav{
-    background: rgb(14, 14, 82);
+.stikle{
+ text-align: center;
+ font-size: 30px;
+ background-image: linear-gradient(to right,rgb(207, 100, 105),rgb(202, 202, 52),rgb(89, 196, 19));
+ color: transparent;
+ -webkit-background-clip: text;
+ padding-top: 50px;
+
 }
 .container{
-    background-image: url("../../asset/images.jpg");
+    background-image: url("../../asset/Images/images.jpg");
     background: no-repeat;
     background-size: cover;
 }
+.elise{
+    width: 30%;
+    height: 20rem;
+    object-fit: cover;
+    background-position: center;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+.our{
+    margin-left: 2rem;
+}
+.photo-container{
+        width: 18rem;
+        display:flex;
+        gap:1.5rem;
+  margin-right: auto;
+}
+.therapy{
+    float: right;
+    width: 180px;
+}
+
+.images{
+    background-image:  linear-gradient(rgba(24, 21, 21, 0.418), rgba(16, 18, 27, 0.7)),url("../../asset/Images/AdobeStock.jpeg");
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    width: 100%;
+    height: 30rem;
+}
+.ght{
+    background-color: rgba(128, 128, 128, 0.13);
+}
+
+.img{
+    background-image: linear-gradient(rgba(24, 21, 21, 0.418), rgba(16, 18, 27, 0.7)),
+    url("../../asset/Images/TM.png");
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 40rem
+}
+/*  */
+h3{
+    /* position:relative;
+    display:block; */
+    font-size: 20px;
+    border: 20px;
+    color:rgb(2, 12, 68);
+    margin: 0 auto;
+    
+    
+}
+.button{
+  margin-left: 50px;
+  float: left;
+  border: radius 1px;
+  margin: 0 auto;
+}
+.radio{
+    float:center;
+    margin: 0 auto;
+    
+}
+.carousel-img{
+    width: 90%;
+    margin: 0 auto;
+    color:white;
+    text-align: center;  
+    padding-top: 40px; 
+    background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(253, 253, 249),rgb(254, 255, 253));
+    color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 50px;
+}
+.ther{
+    width: 100px;
+    height: 70rem;
+    gap:3rem;
+    display:flex;
+}
+
+.link-green:link,
+.link-green:visited{
+    color: green;
+}
+.link-green:hover,
+.link-green:active{
+color: white;
+}
+.btn-link:link,
+.btn-link:visited{
+    background: green;
+    padding: 1.2rem 3.2rem;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 0.2rem;
+}
+.btn-link:link,
+.btn-link:active{
+    color: white;
+    background-color: green;
+}
+ .carouselImg img{
+    height: 20%;
+    width:10%;
+    margin-top: 20px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.Success{
+    width: 6%;
+    height: 5%;
+    margin-left: 20%;
+    border-radius: 100%;
+
+}
+.d-block w-100{
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.anyone{
+    width: 40%;
+    height: 30%;
+    margin-left: 30.5%;
+    object-fit:cover
+}
+
+.allworld{
+    font-size: 10px;
+    display: inline-block;
+    padding: 1rem;
+    margin-bottom: 1%;
+    margin-left:2rem
+
+}
+.btn button{
+    background: green;
+}
+
+/* request therapy */
+
+.request{
+    background-image: url("../../asset/Images/login4.jpg");
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+}
+input{
+    color: gray;
+}
+/* getstartedform */
+.getstart{
+    background-image: url("../../asset/Images/better1.jpg");
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 80vh;
+}
+.corousel-img{
+    width:28%;
+    margin: 0 auto;
+    height: 20%;
+    object-fit: cover;
+}
+.button-read{
+    padding: 1rem;
+    gap: 2.5rem;
+    display: inline-flex;
+    margin-left: 40%;
+}
+.button-read:hover Button{
+    transition: 0.5s;
+    color: green;
+}
+.gug:hover{
+    transition: 0.5s;
+    color: green;
+}
+.image-carousel img{
+    width: 30rem;
+    display: inline-block;
+}
+Card .cardgrid{
+    background-color: rgb(236, 175, 32);
+
+}
+
+.requesto{
+    background-image: url("../../asset/Images/login4.jpg");
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh
+}
+.Navbar {
+    background: linear-gradient(90deg, rgb(11, 11, 95) 0%, rgb(22, 22, 80));
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .fa-firstdraft {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-left: 10rem;
+    font-size:  2.4rem;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    left: 40px;
+  }
+  
+  .nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.6rem;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  
+  .nav-links:hover {
+    color: rgb(192, 192, 34);
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
+  
+  .fa-bars {
+    color: #fff;
+  }
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: relative;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      margin-top: 10px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      margin-left: 40rem;
+    }
+  
+    .nav-menu.active {
+      background:rgb(36, 36, 82);
+      left: 0;
+      opacity: 1;
+      transition:  0.5s ;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      background-color: #1888ff;
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+     .nav-links-mobile {
+      display: block;
+      text-align: center;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      background: #1888ff;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  
+    .nav-links-mobile:hover {
+      background: black;
+      color: #1888ff;
+      transition: 250ms;
+    }
+  
+    button {
+      display: none;
+    }
+  }
+  .navbar-logo{
+    width: 100px;
+    height: 5rem;
+  }
