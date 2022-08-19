@@ -1,5 +1,5 @@
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Checkbox, Form, Input} from 'antd';
+import { Button, Checkbox, Form, Input,Card} from 'antd';
 import React from 'react';
 import "../Component/Navbar/Navbar.css";
 
@@ -7,6 +7,7 @@ const Login= () => {
   return (
    
     <>
+
      <div className="requesto">
      <div  style={{width:"45%",marginLeft:"40rem",paddingTop:"100px" }}>
       <Form.Item
@@ -52,9 +53,14 @@ const Login= () => {
         </Button>
         {/* Or <a href="">register now!</a> */}
       </Form.Item>
+      <Card className="yegiiiiry" style={{backgroundColor:"rgb(35, 35, 133)",borderRadius:"60px",marginLeft:"9rem",paddingBottom:"30px"}}>
+      <h1 style={{color:"white",fontSize:"20px"}}>"Start by doing what's necessary; <br></br>
+        then do what's possible; <br></br>and suddenly you are doing the impossible."<br></br></h1>
+    </Card>
       {/* </Form> */}
     {/* </Card> */}
     </div>
+
     </div>
     </>
   );
