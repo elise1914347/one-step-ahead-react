@@ -16,10 +16,24 @@ body{
     background-repeat: no-repeat;
 }
 .bodygetstart1{
-    background-image: linear-gradient(rgba(24, 21, 21, 0.418), rgba(16, 18, 27, 0.7)), url("../asset/Images/depressionhelp.jpg");
+    background-image: linear-gradient(rgba(56, 53, 53, 0.418), rgba(84, 85, 90, 0.7)),url("../asset/Images/t8.jpg");
     background-size: cover;
     object-fit: cover;
     background-repeat: no-repeat;
+}
+.right{
+    color:black;
+    text-align: center;  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+}
+.righte{
+    color:black;
+    text-align: center;  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
 }
 .input{
     width:10px;

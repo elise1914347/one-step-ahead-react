@@ -6,24 +6,32 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import Logo from "../../asset/Images/logo.jpg"
+import {Button} from "antd"
 
 function Navbar() {
   const [active, setActive] = useState("nav__menu");
+  const [toggleIcon,setToggleIcon]= useState("nav__toggler")
   const navToggle = () => {
     active === "nav__menu"
       ? setActive("nav__menu nav__active")
       : setActive("nav__menu");
+
+      //TogglerIcon
+      toggleIcon === "nav__toggler" ?   setToggleIcon("nav__toggler toggle") : setToggleIcon("nav__toggler")
+
+
   };
 
   return (
+    <>
     <nav className="nav">
-      <navLink to="/">
-            <img src={require("../../asset/Images/logo.jpg")} alt="logo" className="navbar-logo"></img>
-        </navLink>
+      <div className="navbar-logo">
+            <img src={require("../../asset/Images/logo.jpg")} alt="logo" ></img>
+            </div>
       <ul className={active}>
         <li className="nav_item">
           <a href="/Home" className="nav_link">
-            HOME
+            Home
           </a>
         </li>
         <li className="nav_item">
@@ -37,22 +45,23 @@ function Navbar() {
           </a>
         </li>
         <li className="nav_item">
-          <a href="/GetStarted" className="nav_link">
-            GetStarted
-          </a>
-        </li>
-        <li className="nav_item">
           <a href="/login" className="nav_link">
             Login
           </a>
         </li>
+        <li className="nav_item">
+          <Button href="/GetStarted" className="nav_links">
+            GetStarted
+          </Button>
+        </li>
       </ul>
-      <div onClick={navToggle} className="nav__toggler">
+      <div onClick={navToggle} className={toggleIcon}>
         <div className="line1"></div>
         <div className="line2"></div>
         <div className="line3"></div>
       </div>
     </nav>
+    </>
   );
 }
 export default Navbar;

@@ -20,20 +20,20 @@ const Footer=()=>{
             <p className="copyright"> copyright &copy; {year} onestepAhead <span>Inc, All right reserved</span></p>
             </div>
         
-        <div className="acount-column">
+        <div className="acount-columni">
             <h3 className="footer-title">Follow Us</h3>
             <p>523 Remera st,,2nd floor, <span>kigali Rwanda</span></p>
             <p>tel:+250-785-234-430</p>
             <p>onestepAhead@gmail.com</p>
         </div>
-        <div className="acount-column">
+        <div className="acount-columnu">
         <h3 className="footer-title">Subscribe </h3>
         <p>Create Account </p>
         <p>Sign-in </p>
         <p>log-in </p>
        </div>
 
-        <div className="acount-column">
+        <div className="acount-columns">
         <h3 className="footer-title">Our Services</h3>
         <p>Home </p>
         <p>about us</p>
@@ -41,7 +41,7 @@ const Footer=()=>{
         <p>GetStarted</p>
         </div>
 
-        <div className="acount-column">
+        <div className="acount-columne">
         <h3 className="footer-title">about Comment</h3>
         <p>one-Step-Ahead directory </p>
         <p>help center </p>
