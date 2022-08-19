@@ -19,13 +19,13 @@ const Home = () => {
      </div>
      <div className="ighr">
      <Form.Item className="button" >
-       <a href="/Getstarted"> <Button style={{background:"rgb(2, 12, 68)",color:"white",textAlign: "center",marginLeft:"1rem",borderRadius:"1px",width:"20rem",marginTop:"30px"}}>Individual<br></br><br></br><h4 style={{color:"white"}}>(for myself)</h4></Button></a>
+       <a href="/Getstarted"> <Button style={{background:"rgb(2, 12, 68)",color:"white",textAlign: "center",marginLeft:"1rem",borderRadius:"1px",width:"20rem",marginTop:"15px"}}>Individual<br></br><br></br><h4 style={{color:"white"}}>(for myself)</h4></Button></a>
       </Form.Item>
       <Form.Item >
-      <a href="/Getstarted"> <Button style={{background:"rgb(2, 12, 68)",color:"white",textAlign: "center",marginLeft:"1rem",borderRadius:"1px",marginTop:"30px"}}>Couple<br></br><br></br><h4 style={{color:"white"}}>(for me and my parterner)</h4></Button></a>
+      <a href="/Getstarted"> <Button style={{background:"rgb(2, 12, 68)",color:"white",textAlign: "center",marginLeft:"1rem",borderRadius:"1px",marginTop:"15px"}}>Couple<br></br><br></br><h4 style={{color:"white"}}>(for me and my parterner)</h4></Button></a>
       </Form.Item>
       <Form.Item >
-      <a href="/Getstarted"> <Button style={{background:"rgb(2, 12, 68)",color:"white",textAlign: "center",marginLeft:"1rem",borderRadius:"1px",width:"20rem",marginTop:"30px"}}>Children<br></br><br></br><h4 style={{color:"white"}}>(for my child)</h4></Button></a>
+      <a href="/Getstarted"> <Button style={{background:"rgb(2, 12, 68)",color:"white",textAlign: "center",marginLeft:"1rem",borderRadius:"1px",width:"20rem",marginTop:"15px"}}>Children<br></br><br></br><h4 style={{color:"white"}}>(for my child)</h4></Button></a>
       </Form.Item>
       </div>
       </div>
@@ -80,10 +80,10 @@ const Home = () => {
           <h5 style={{textAlign:"center",fontSize:"1.5rem"}}>Talk to your Therapist however you feel confortable</h5>
           <h6 style={{textAlign:"center",fontSize:"1.5rem"}}>Message your therapist anytime from anywhere. No scheduling needed.</h6>
           <div className="ther">
-          <img src="https://dy7glz37jgl0b.cloudfront.net/home/betterhelp/full-schedule.png?v=966d54b722cb" alt="" style={{marginLeft:"30px"}}></img>
+          <img src="https://dy7glz37jgl0b.cloudfront.net/home/betterhelp/full-schedule.png?v=966d54b722cb" alt=""></img>
           
           
-          <img src="https://dy7glz37jgl0b.cloudfront.net/home/betterhelp/full-session.png?v=966d54b722cb" alt="" style={{marginLeft:"190px"}}></img>  
+          <img src="https://dy7glz37jgl0b.cloudfront.net/home/betterhelp/full-session.png?v=966d54b722cb" alt="" ></img>  
         </div>
 
       </div>
