@@ -26,8 +26,8 @@ const GetStarted = () => {
     <>
     <div className="bodygetstart1">
       <div style={{textAlign:"center",paddingLeft:"25rem",paddingRight:"25rem",gap:"2rem"}} >
-        <h1 style={{color:"white"}}>Help us match you to the <span style={{color:"yellow"}}>right therapist</span></h1>
-        <p style={{fontSize:"16px",color:"white",marginTop:"30px"}}>
+        <h1 style={{color:"black"}} className="right">Help us match you to the <span style={{color:"yellow"}}>right therapist</span></h1>
+        <p style={{fontSize:"16px",color:"black",marginTop:"30px"}} className="righte">
            Please fill out this short
           questionnaire to provide some background information about you and the
           issues you'd like to deal with in therapy. It would help us match you
@@ -68,21 +68,7 @@ const GetStarted = () => {
               </Form.Item>
             </div>
           </Form>
-          <h3  style={{color:"white",marginTop:"60px"}}>we'll match you to the Therapist that can help you"</h3>
-        {/* <div className="image">
-          <div>
-            <h4 style={{ color:"#06062bf7" }}>Depression</h4>
-            <img src={depression} className="image1" />
-          </div>
-          <div>
-            <h4 style={{color:"#06062bf7" }}>Stress</h4>
-            <img src={stress} className="image1" />
-          </div>
-          <div>
-            <h4 style={{color:"#06062bf7" }}>Relationship</h4>
-            <img src={relationship} className="image1" />
-          </div>
-        </div> */}
+          <h3  className="thrapi">we'll match you to the Therapist that can help you"</h3>
       </div>
       <div className="disya">
       <Carousel autoplay style={{ marginLeft: "35%", marginRight: "25%" }}>

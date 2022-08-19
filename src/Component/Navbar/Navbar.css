@@ -4,11 +4,14 @@
 }
 .stikle{
  text-align: center;
- font-size: 30px;
- background-image: linear-gradient(to right,rgb(207, 100, 105),rgb(202, 202, 52),rgb(89, 196, 19));
- color: transparent;
- -webkit-background-clip: text;
  padding-top: 50px;
+ font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
 
 }
 .container{
@@ -39,7 +42,7 @@
 }
 
 .images{
-    background-image:  linear-gradient(rgba(24, 21, 21, 0.418), rgba(16, 18, 27, 0.7)),url("../../asset/Images/AdobeStock.jpeg");
+    background-image:  linear-gradient(rgba(24, 21, 21, 0.418), rgba(40, 44, 59, 0.7)),url("../../asset/Images/AdobeStock.jpeg");
     background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
@@ -52,13 +55,13 @@
 }
 
 .img{
-    background-image: linear-gradient(rgba(24, 21, 21, 0.418), rgba(16, 18, 27, 0.7)),
+    background-image: linear-gradient(rgba(22, 20, 20, 0.418), rgba(12, 15, 31, 0.7)),
     url("../../asset/Images/TM.png");
     background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 100%;
+    width:100%;
     height: 40rem
 }
 /*  */
@@ -85,19 +88,26 @@ h3{
 }
 .carousel-img{
     width: 90%;
-    margin: 0 auto;
     color:white;
     text-align: center;  
     padding-top: 40px; 
-    background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(253, 253, 249),rgb(254, 255, 253));
-    color: transparent;
-    -webkit-background-clip: text;
     padding-top: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+}
+.thrapi{
+  color:black;
+  margin-top:60px;
+  font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+
 }
 .ther{
-    width: 100px;
-    height: 70rem;
-    gap:3rem;
+    width: 50px; 
+    height: 60rem; 
+    gap:2rem;
     display:flex;
 }
 
@@ -226,9 +236,19 @@ Card .cardgrid{
     background: linear-gradient(90deg, rgb(11, 11, 95) 0%, rgb(22, 22, 80));
     height: 80px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.5rem;
+    padding:0 2rem;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .nav_links{
+    left: 12rem;
+    border-radius: 40px;
+    top:5px;
+    color:white
+  }
+  .nav_links:hover{
+  background: green;
   }
   .fa-firstdraft {
     margin-left: 0.5rem;
@@ -236,9 +256,9 @@ Card .cardgrid{
   }
   
   
-  .navbar-logo{
+  .navbar-logo img{
     width: 100px;
-    height: 3rem;
+    height: 4rem;
   }
   *,*::after,*::before{
     margin: 0;
@@ -263,10 +283,7 @@ Card .cardgrid{
     align-items: center;
     justify-content: space-around;
     height:8vh;
-    background: rgb(11, 11, 112);
-    padding: 10;
-  
-  
+    background: rgb(11, 11, 112);  
   }
   .nav_brand{
     text-transform: uppercase;
@@ -276,13 +293,15 @@ Card .cardgrid{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 3rem;
+    gap: 1.5rem;
+    margin-left: 100px;
   }
   .nav__toggler div{
     width: 2.5rem;
     height: 0.2rem;
     margin: 0.4rem;
     background: darkgray;
+    transition: 0.4s ease-in;
   }
   .nav__toggler{
     cursor: pointer;
@@ -292,6 +311,9 @@ Card .cardgrid{
     .nav__toggler{
       display: block;
     }
+    .button{
+      margin-left: 1px;
+    }  
     .nav__menu{
       position: fixed;
       top: 7vh;
@@ -300,7 +322,8 @@ Card .cardgrid{
       height: 93vh;
       background: rgb(11, 11, 112);
       flex-direction: column;
-      transform: translateX(100%)
+      transform: translateX(100%);
+      transition: 0.5 ease-in;
     }
     
   }
@@ -308,6 +331,41 @@ Card .cardgrid{
   .nav__active{
     transform: translateX(0);
   }
+  /*Toggle Icon Animation */
+  .Toggle .line1{
+    transform: rotate(45deg) translate(-4px,-5px);
+  }
+  .Toggle .line2{
+    opacity: 0;
+  }
+  .Toggle .line3{
+    transform: rotate(45deg) translate(-4px,-5px);
+  }
   .nav_link{
     color: aliceblue;
+  }
+  .nav_link:hover{
+    color: yellow;
+  }
+  .nav_links:hover{
+    color: yellow;
+  }
+  .img{
+    width: 100%;
+  }
+.carousel-img{
+  margin-left: 8rem;
+
+  }
+  .ighr{
+    margin-top:1px;
+    margin-left:32rem;
+    display:flex;
+    text-align:center
+  }
+  .ther{
+ max-inline-size: 100%;
+ block-size: auto;
+
+  object-fit: contain;
   }
