@@ -40,6 +40,11 @@ function Navbar() {
             </a>
           </li>
           <li className="nav_item">
+            <a href="/therapist" className="nav_link">
+              TherapistJob
+            </a>
+          </li>
+          <li className="nav_item">
             <a href="/login" className="nav_link">
               Login
             </a>
