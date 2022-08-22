@@ -1,7 +1,12 @@
-import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Checkbox, Form, Input,Card} from 'antd';
+import { LockOutlined, UserOutlined,FacebookOutlined,GoogleOutlined } from '@ant-design/icons';
+import { Button, Checkbox, Form, Input,Card,Carousel} from 'antd';
 import React from 'react';
-import "../Component/Navbar/Navbar.css";
+import "../Component/Navbar/Navbar.css"
+import Loginphto from "../asset/Images/undraw_Mobile_login_re_9ntv.png";
+import Getimage from "../asset/profilepic.webp";
+import Getimage2 from "../asset/profilepic_2.jpg";
+import Lge from "../asset/Images/loginPage.png.png";
+
 
 const Login= () => {
   return (
@@ -9,9 +14,11 @@ const Login= () => {
     <>
 
      <div className="requesto">
-     <div  style={{width:"45%",marginLeft:"40rem",paddingTop:"100px" }}>
+     <div  style={{width:"45%",paddingTop:"100px" }}>
+   
       
-     <Card style={{marginLeft:"35%",marginBottom:"100px",left:"40%",bottom:"80px"}}>
+     <Card style={{marginBottom:"100px",left:"30rem",bottom:"9rem"}}>
+       <img src={Lge} alt="" className="pagi"></img>
       <Form.Item
         name="username"
         rules={[
@@ -55,19 +62,63 @@ const Login= () => {
         </Button>
         {/* Or <a href="">register now!</a> */}
       </Form.Item>
+      {/* <img src={Loginphto} alt="" className="logn"></img> */}
       </Card>
-
-      <Card style={{borderRadius:"50px",fontSize:"2px",textAlign:"center",bottom:"50px",marginLeft:"1px"}}>
-        <h1 style={{backgroundColor:"blue"}}>"The future belongs to those who believe in the beauty of their dreams."</h1>
-      </Card>
-   
       {/* <Card className="yegiiiiry" style={{backgroundColor:"rgb(35, 35, 133)",borderRadius:"60px",marginLeft:"9rem",paddingBottom:"30px"}}>
       <h1 style={{color:"white",fontSize:"20px"}}>"Start by doing what's necessary; <br></br>
         then do what's possible; <br></br>and suddenly you are doing the impossible."<br></br></h1>
     </Card> */}
     </div>
+    
 
     </div>
+    {/* <div className="lginra">
+    <Carousel autoplay style={{ marginLeft: "35%", marginRight: "25%" }} >
+          <div>
+            <div style={{ display: "flex", gap: "5rem" }}>
+              <img
+                src={Getimage}
+                style={{ borderRadius: "100%", height: "6rem", width: "6rem" }}
+              />
+              <div >
+                <h5 style={{color:"black"}}>Latest Review For</h5>
+                <h4 style={{ color: "yellow" }}>DUSENGE FABIOLA</h4>
+              </div>
+            </div>
+            <div style={{marginTop:"2rem"}}>
+              <p style={{ marginLeft: "2rem",color:"black" }}>N.I. wrote 2 days ago</p>
+              <p style={{ fontSize: "15px",color:"black"}}>
+                My experience have been fulfilling and healing
+                <br />I like Jessica she is my therapist but i feel like she is
+                my best friend
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div style={{ display: "flex", gap: "5rem" }}>
+              <img
+                src={Getimage2}
+                style={{ borderRadius: "100%", height: "6rem", width: "6rem" }}
+              />
+              <div >
+                <h5 style={{color:"black"}}>Latest Review For</h5>
+                <h3 style={{ color: "yellow" }}>Hailla Jack</h3>
+              </div>
+            </div>
+            <div style={{marginTop:"2rem"}}>
+              <p style={{ marginLeft: "2rem",color:"black"}}>H.J. wrote 3 days ago</p>
+              <p style={{ fontSize: "15px",color:"black"}}>
+                My experience have been fulfilling and healing
+                <br />I like patric! he has helped me in different aspect of my
+                healing and my journey. he is my therapist but i feel like she is my best
+                friend
+              </p>
+            </div>
+          </div>
+        </Carousel>
+        </div> */}
+     
    
     </>
   );
