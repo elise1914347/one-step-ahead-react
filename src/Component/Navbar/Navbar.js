@@ -16,6 +16,7 @@ function Navbar() {
       ? setToggleIcon("nav__toggler toggle")
       : setToggleIcon("nav__toggler");
   };
+
   return (
     <>
       <nav className="nav">
@@ -62,6 +63,5 @@ function Navbar() {
       </nav>
     </>
   );
-
-};
+}
 export default Navbar;
