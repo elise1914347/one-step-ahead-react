@@ -28,7 +28,7 @@
     margin-left: 2rem;
 }
 .photo-container{
-        width: 18rem;
+        width:+ 18rem;
         display:flex;
         gap:1.5rem;
   margin-right: auto;
