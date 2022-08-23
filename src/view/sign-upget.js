@@ -2,9 +2,11 @@ import React from "react";
 import { Form, Input,Card, Button,Radio} from 'antd';
 import "../Component/Navbar/Navbar.css";
 
+
 const Register =()=>{
     return(
 <>
+
 <div className="getstart">
             <Card style={{width:"40%",margin:"0 auto",paddingTop:"5rem",marginTop:"1rem" }}>
                 <Form>
@@ -37,7 +39,6 @@ const Register =()=>{
       </Form>
       </Card>
       </div>
-      
       </>
 
 

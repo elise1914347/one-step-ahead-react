@@ -52,15 +52,15 @@ const Tablese = () => {
               setVisibleModal(true);
             }}
           >
-            Delete
+            Update
           </a>
-          <a
+          {/* <a
             onClick={() => {
               setVisibleDrawer(true);
             }}
           >
             views
-          </a>
+          </a> */}
         </Space>
       ),
     },
@@ -73,17 +73,17 @@ const Tablese = () => {
         onOK={() => {
           setVisibleModal(false);
           notification.success({
-            message: "user has been deleted successfully.",
+            message: "user has been updated successfully.",
           })
         }}
         onCancel={() => {
           setVisibleModal(false);
           notification.warn({
-            message: "you have canceled on your user delete",
+            message: "you have canceled on your user update",
           })
         }}
       >
-        <h2> are you sure you want to delete? {userSelected.name}</h2>
+        <h2> are you sure you want to update?</h2>
       </Modal>
       <Drawer
         visible={visibleDrawer}

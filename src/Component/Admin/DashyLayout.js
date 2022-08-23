@@ -38,12 +38,12 @@ const DashLayout = ({ children }) => {
             //   icon: <VideoCameraOutlined  onClick={()=>navigate("/User")}/>,
             //   label: <h4 onClick={()=>navigate("/Login")} style={{color:"white"}}>login</h4>
             // },
-            {
+            // {
               
-              key: "3",
-             icon: <UploadOutlined onClick={()=>navigate("/Therapist")}/>,
-              label:<h4 onClick={()=>navigate("/request")} style={{color:"white"}}>Request-Therapist</h4>
-            },
+            //   key: "3",
+            //  icon: <UploadOutlined onClick={()=>navigate("/Therapist")}/>,
+            //   label:<h4 onClick={()=>navigate("/request")} style={{color:"white"}}>Request-Therapist</h4>
+            // },
             {
               
               key: "3",

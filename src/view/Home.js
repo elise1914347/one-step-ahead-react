@@ -83,7 +83,7 @@ const Home = () => {
           <img src="https://dy7glz37jgl0b.cloudfront.net/home/betterhelp/full-schedule.png?v=966d54b722cb" alt=""></img>
           
           
-          <img src="https://dy7glz37jgl0b.cloudfront.net/home/betterhelp/full-session.png?v=966d54b722cb" alt="" ></img>  
+          <img src="https://dy7glz37jgl0b.cloudfront.net/home/betterhelp/full-session.png?v=966d54b722cb" alt="" style={{marginLeft:"20%"}} ></img>  
         </div>
 
       </div>
