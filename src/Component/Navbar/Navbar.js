@@ -1,92 +1,67 @@
 import React, { useState } from "react";
-import Logo from "../../asset/Images/logo.jpg"
-import {Button} from "../Button";
-import { Link} from "react-router-dom"
-import './Navbar.css';
-import Dropdown from "./Dropdown";
-import {navLink } from "react-router-dom"
+import "./Navbar.css";
+import Logo from "../../asset/Images/logo.jpg";
+import { Button } from "antd";
 
+function Navbar() {
+  const [active, setActive] = useState("nav__menu");
+  const [toggleIcon, setToggleIcon] = useState("nav__toggler");
+  const navToggle = () => {
+    active === "nav__menu"
+      ? setActive("nav__menu nav__active")
+      : setActive("nav__menu");
 
+    //TogglerIcon
+    toggleIcon === "nav__toggler"
+      ? setToggleIcon("nav__toggler toggle")
+      : setToggleIcon("nav__toggler");
+  };
+  return (
+    <>
+      <nav className="nav">
+        <div className="navbar-logo">
+          <img src={require("../../asset/Images/logo.jpg")} alt="logo"></img>
+        </div>
+        <ul className={active}>
+          <li className="nav_item">
+            <a href="/Home" className="nav_link">
+              Home
+            </a>
+          </li>
+          <li className="nav_item">
+            <a href="/aboutus" className="nav_link">
+              AboutUs
+            </a>
+          </li>
+          <li className="nav_item">
+            <a href="/contactUs" className="nav_link">
+              ContactUs
+            </a>
+          </li>
+          <li className="nav_item">
+            <a href="/therapist" className="nav_link">
+              TherapistJob
+            </a>
+          </li>
+          <li className="nav_item">
+            <a href="/login" className="nav_link">
+              Login
+            </a>
+          </li>
+          <li className="nav_item">
+            <Button href="/GetStarted" className="nav_links">
+              GetStarted
+            </Button>
+          </li>
+        </ul>
+        <div onClick={navToggle} className={toggleIcon}>
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+        </div>
+      </nav>
+    </>
+  );
 
-
-
-function Navbar(){
-    const[click,setClick]=useState(false)
-    const handleClick=()=>setClick(!click)
-    const closeMobileMenu=()=>setClick(false)
-    const onMouseEnter =()=>{
-        if(window.innerWidth<960){
-            setDropdown(false)
-        } else{
-            setDropdown(true)
-        }
-    };
-    const onMouseLeave =()=>{
-        if(window.innerWidth<960){
-            setDropdown(false)
-        } else{
-            setDropdown(false)
-        }
-    };
-
-
-
-    const [dropdown,setDropdown]=useState(false)
-
-
-    return(
-        <>
-        <nav className="Navbar">
-        <navLink to="/">
-            <img src={require("../../asset/Images/logo.jpg")} alt="logo" className="navbar-logo"></img>
-        </navLink>
-            <div className="menu-icon" onClick={handleClick}>
-                <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
-
-            <i class="fa fa-bars" aria-hidden="true"></i>
-
-            </div>
-            <ul className={click ? "nav-menu active": "nav-menu"}>
-                <li className="nav-item">
-                    <Link to='/Home' className="nav-links" onClick={closeMobileMenu}>
-                    Home
-                    </Link>
-                </li>
-                <li className="nav-item"
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
-                
-                >
-                    <Link to='/AboutUs' className="nav-links" onClick={closeMobileMenu}>
-                    AboutUs <i className="fas fa-caret-down"/>
-                    </Link>
-                    {dropdown && <Dropdown/>}
-                </li>
-                <li className="nav-item">
-                    <Link to="/contactUs" className="nav-links" onClick={closeMobileMenu}>
-                    contact Us
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/therapist" className="nav-links" onClick={closeMobileMenu}>
-                    TherapistJob
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/login" className="nav-links" onClick={closeMobileMenu}>
-                    Login
-                    </Link>
-                </li>
-
-                
-            </ul>
-            
-            <Button/>
-
-        </nav>
-        </>
-
-    )
-
-}
+};
 export default Navbar;

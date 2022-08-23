@@ -1,14 +1,25 @@
-import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Checkbox, Form, Input} from 'antd';
+import { LockOutlined, UserOutlined,FacebookOutlined,GoogleOutlined } from '@ant-design/icons';
+import { Button, Checkbox, Form, Input,Card,Carousel} from 'antd';
 import React from 'react';
-import "../Component/Navbar/Navbar.css";
+import "../Component/Navbar/Navbar.css"
+import Loginphto from "../asset/Images/undraw_Mobile_login_re_9ntv.png";
+import Getimage from "../asset/profilepic.webp";
+import Getimage2 from "../asset/profilepic_2.jpg";
+import Lge from "../asset/Images/loginPage.png.png";
+import SignUp from "../view/sign-upget";
+
 
 const Login= () => {
   return (
    
     <>
+
      <div className="requesto">
-     <div  style={{width:"45%",marginLeft:"40rem",paddingTop:"100px" }}>
+     <div  style={{width:"45%",paddingTop:"100px" }}>
+   
+      
+     <Card style={{marginBottom:"100px",left:"30rem",bottom:"9rem"}}>
+       <img src={Lge} alt="" className="pagi"></img>
       <Form.Item
         name="username"
         rules={[
@@ -45,15 +56,13 @@ const Login= () => {
           Forgot password
         </a>
       </Form.Item>
-
       <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button" style={{marginLeft:"20rem"}}>
+        <a href="/signup" style={{color:"white", fontSize:"20px",marginLeft:"60%",background:"black"}}>SignUp</a>
+        <Button type="primary" htmlType="submit" className="login-form-button" style={{marginLeft:"1px",width:"100%"}}>
           Log in
         </Button>
-        {/* Or <a href="">register now!</a> */}
       </Form.Item>
-      {/* </Form> */}
-    {/* </Card> */}
+      </Card>
     </div>
     </div>
     </>

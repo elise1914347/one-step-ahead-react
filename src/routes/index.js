@@ -14,7 +14,7 @@ import Login from "../view/login";
 import Register from "../view/sign-upget";
 import AskTherapist from "../view/requestTherapist";
 import TherapistForm from "../view/Therapist/therapistform";
-
+import Table from "../Component/Table";
 import Contact from "../view/contactUs"
 
 
@@ -36,6 +36,7 @@ const index=() =>{
         <Route exact path="/GetStarted" element={<GetStarted/>}></Route>
         <Route exact path="/couple" element={<CoupleForm/>}></Route>
         <Route exact path="/individual" element={<IndividualForm/>}></Route>
+        <Route exact path="/Table" element={<Table/>}></Route>
         <Route exact path="/decide" element={<DecideForm/>}></Route> 
             <Route exact path="/aboutus" element={<AboutUs/>}></Route>
 

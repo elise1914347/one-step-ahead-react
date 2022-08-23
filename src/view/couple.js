@@ -39,9 +39,9 @@ const CoupleForm = () => {
         >
           <h1>
             Help us match you to the{" "}
-            <span style={{ color: "blueviolet" }}>right therapist</span>
+            <span style={{ color: "yellow" }}>right therapist</span>
           </h1>
-          <p style={{ fontSize: "17px" }}>
+          <p style={{ fontSize: "17px",color:"white" }}>
             Please fill out this short questionnaire to provide some background
             information about you and the issues you'd like to deal with in
             therapy. It would help us match you with the most suitable therapist
