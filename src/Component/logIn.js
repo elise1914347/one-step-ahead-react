@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import 'antd/dist/antd.css';
 import { Button, Checkbox, Form, Input } from 'antd';
 import Dashboard from "../view/Admin/Dashboard";
