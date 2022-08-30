@@ -390,15 +390,15 @@ Card .cardgrid{
   }
 .carousel-img{
   margin-left: 5rem;
-
   }
   .ighr{
-    margin-left:27rem;
+    margin-left:2rem;
     display:flex;
     text-align:center;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
   }
   .ther{
  max-inline-size: 100%;
