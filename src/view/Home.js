@@ -19,13 +19,13 @@ const Home = () => {
      </div>
      <div className="ighr">
      <Form.Item className="button" >
-       <a href="/Getstarted"> <Button style={{background:"rgb(2, 12, 68)",color:"white",textAlign: "center",marginLeft:"1rem",borderRadius:"1px",width:"20rem",marginTop:"15px"}}>Individual<br></br><br></br><h4 style={{color:"white"}}>(for myself)</h4></Button></a>
+       <a href="/Getstarted"> <Button style={{background:"rgb(2, 12, 68)",color:"white",textAlign: "center",borderRadius:"1px",width:"20rem",marginTop:"15px"}}>Individual<br></br><br></br><h4 style={{color:"white"}}>(for myself)</h4></Button></a>
       </Form.Item>
       <Form.Item >
-      <a href="/Getstarted"> <Button style={{background:"rgb(2, 12, 68)",color:"white",textAlign: "center",marginLeft:"1rem",borderRadius:"1px",marginTop:"15px"}}>Couple<br></br><br></br><h4 style={{color:"white"}}>(for me and my parterner)</h4></Button></a>
+      <a href="/Getstarted"> <Button style={{background:"rgb(2, 12, 68)",color:"white",textAlign: "center",borderRadius:"1px",marginTop:"15px"}}>Couple<br></br><br></br><h4 style={{color:"white"}}>(for me and my parterner)</h4></Button></a>
       </Form.Item>
       <Form.Item >
-      <a href="/Getstarted"> <Button style={{background:"rgb(2, 12, 68)",color:"white",textAlign: "center",marginLeft:"1rem",borderRadius:"1px",width:"20rem",marginTop:"15px"}}>Children<br></br><br></br><h4 style={{color:"white"}}>(for my child)</h4></Button></a>
+      <a href="/Getstarted"> <Button style={{background:"rgb(2, 12, 68)",color:"white",textAlign: "center",borderRadius:"1px",width:"20rem",marginTop:"15px"}}>Children<br></br><br></br><h4 style={{color:"white"}}>(for my child)</h4></Button></a>
       </Form.Item>
       </div>
       </div>
