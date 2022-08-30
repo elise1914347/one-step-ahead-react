@@ -1,15 +1,20 @@
 
-import React from "react";
+import React,{ useState,useEffect} from "react";
 
 import depression from "../asset/depression.webp";
 import stress from "../asset/stress.webp";
 import relationship from "../asset/relationship.webp";
 import { useNavigate } from "react-router-dom";
 import "./Getstarted.css";
-import { Form, Input, InputNumber, Card,Carousel } from "antd";
+import { Form, Input, InputNumber, Card,Carousel,Typography,Image,Space } from "antd";
+import TherapistServices from "../services/TherapistServices";
+// import Therapist from "../asset/Data/therapist.json";
+
+const {Text,Title}=Typography
 
 
 const GetStarted = () => {
+
   const navigate = useNavigate();
 
   const navigateToForm1 = () => {
@@ -21,7 +26,13 @@ const GetStarted = () => {
   const navigateToForm3 = () => {
     navigate("/decide");
   };
-
+  const [Therapist,setTherapist]=useState([])
+  useEffect(()=>{
+    TherapistServices.getAllTherapist().then((res)=>
+    {   
+        setTherapist(res?.data)
+});
+    },[])
   return (
     <>
     <div className="bodygetstart1">
@@ -71,36 +82,21 @@ const GetStarted = () => {
           <h3  className="thrapi">we'll match you to the Therapist that can help you"</h3>
       </div>
       <div className="disya">
-      <Carousel autoplay style={{ marginLeft: "35%", marginRight: "25%" }}>
-          <div>
-            <div style={{ display: "flex", gap: "5rem" }}>
-              <img
-                src={stress}
-                style={{ borderRadius: "100rem", height: "6rem", width: "6rem" }}
-              />
-               <h4 style={{ color:"white" }}>Stress</h4>
-            </div>
-          </div>
-          <div>
-            <div style={{ display: "flex", gap: "5rem" }}>
-              <img
-                src={relationship}
-                style={{ borderRadius: "100%", height: "6rem", width: "6rem" }}
-              />
-                <h4 style={{ color:"white" }}>Relationship</h4>
-            </div>
-          </div>
-
-          <div>
-            <div style={{ display: "flex", gap: "5rem" }}>
-              <img
-                src={depression}
-                style={{ borderRadius: "100%", height: "6rem", width: "6rem" }}
-              />
-             <h4 style={{ color:"white" }}>Depression</h4>
-            </div>
-          </div>
+      <Carousel autoplay>
+             {Therapist.map((Therapist)=>(
+                        <Space direction="vertical">
+                            <Image preview={true} src={Therapist?.picture[0]} />
+                            <Title level={4} style={{color:"brack"}}>
+                                {Therapist?.lastName.toUpperCase()}
+                                </Title>
+              
+                                <Text type="secondary" style={{color:"white",fontSize:"15px"}} italic>{Therapist?.description}</Text>
+                                
+                        </Space>
+                    
+                    )) }
         </Carousel>
+          
         </div>
       </div>
     </>
