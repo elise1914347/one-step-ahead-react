@@ -28,11 +28,11 @@ const DashLayout = ({ children }) => {
           items={[
             
   
-            // {
-            //   key: "1",
-            //   icon: <UserOutlined onClick={()=>navigate("/One")}/>,
-            //   label: <h4 onClick={()=>navigate("/signup")} style={{color:"white"}}>signup-user</h4>
-            // },
+            {
+              key: "1",
+              icon: <UserOutlined onClick={()=>navigate("/Dashboard")}/>,
+              label: <h4 onClick={()=>navigate("/Dashboard")} style={{color:"white"}}>DashBoard</h4>
+            },
             // {
             //   key: "2",
             //   icon: <VideoCameraOutlined  onClick={()=>navigate("/User")}/>,

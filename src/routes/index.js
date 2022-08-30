@@ -15,7 +15,9 @@ import Register from "../view/sign-upget";
 import AskTherapist from "../view/requestTherapist";
 import TherapistForm from "../view/Therapist/therapistform";
 import Table from "../Component/Table";
-import Contact from "../view/contactUs"
+import Contact from "../view/contactUs";
+import DashBoarde from "../view/Dashboard/Dashboard";
+import Graph from "../view/Dashboard/Graph"
 
 
 
@@ -35,12 +37,15 @@ const index=() =>{
         <Route exact path="/aboutus" element={<AboutUs/>}></Route>
         <Route exact path="/GetStarted" element={<GetStarted/>}></Route>
         <Route exact path="/couple" element={<CoupleForm/>}></Route>
+        
+        <Route exact path="/Dashboard" element={<DashBoarde/>}></Route>
         <Route exact path="/individual" element={<IndividualForm/>}></Route>
         <Route exact path="/Table" element={<Table/>}></Route>
         <Route exact path="/decide" element={<DecideForm/>}></Route> 
             <Route exact path="/aboutus" element={<AboutUs/>}></Route>
 
-            <Route exact path="/dashboard" element={<Dashboard/>}></Route>  
+            <Route exact path="/dashboard" element={<Dashboard/>}></Route> 
+            <Route exact path="/graph" element={<Graph/>}></Route> 
               
 
             <Route exact path="/contactUs" element={<Contact/>}></Route> 
