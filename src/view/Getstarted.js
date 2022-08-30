@@ -85,7 +85,7 @@ const GetStarted = () => {
       <Carousel autoplay>
              {Therapist.map((Therapist)=>(
                         <Space direction="vertical">
-                            <Image preview={true} src={Therapist?.picture}/>
+                            <Image preview={true} src={Therapist?.picture[0]} />
                             <Title level={4} style={{color:"brack"}}>
                                 {Therapist?.lastName.toUpperCase()}
                                 </Title>

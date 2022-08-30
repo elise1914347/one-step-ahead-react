@@ -13,5 +13,26 @@ class TherapistServices{
     }
     
     }
+    static async createTherapist(data) {
+        try {
+          const response = await axios.post(
+            "http://localhost:5050/user/create",
+            data,
+            {
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          );
+          console.log("response of createAccount:", response.data);
+          return response.data;
+        } catch (error) {
+          console.log("failed !", Error);
+        }
+      }
+    
     }
+    
+
+
     export default TherapistServices;

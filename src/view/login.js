@@ -2,11 +2,7 @@ import { LockOutlined, UserOutlined,FacebookOutlined,GoogleOutlined } from '@ant
 import { Button, Checkbox, Form, Input,Card,Carousel} from 'antd';
 import React from 'react';
 import "../Component/Navbar/Navbar.css"
-import Loginphto from "../asset/Images/undraw_Mobile_login_re_9ntv.png";
-import Getimage from "../asset/profilepic.webp";
-import Getimage2 from "../asset/profilepic_2.jpg";
-import Lge from "../asset/Images/loginPage.png.png";
-import SignUp from "../view/sign-upget";
+
 
 
 const Login= () => {
@@ -16,10 +12,8 @@ const Login= () => {
 
      <div className="requesto">
      <div  style={{width:"45%",paddingTop:"100px" }}>
-   
-      
-     <Card style={{marginBottom:"100px",left:"30rem",bottom:"9rem"}}>
-       <img src={Lge} alt="" className="pagi"></img>
+     <Card style={{marginBottom:"100px",left:"40rem",bottom:"5rem"}}>
+       <h1 style={{marginLeft:"40%",color:"black"}}>Login</h1>
       <Form.Item
         name="username"
         rules={[
@@ -57,10 +51,12 @@ const Login= () => {
         </a>
       </Form.Item>
       <Form.Item>
-        <a href="/signup" style={{color:"white", fontSize:"20px",marginLeft:"60%",background:"black"}}>SignUp</a>
+       
         <Button type="primary" htmlType="submit" className="login-form-button" style={{marginLeft:"1px",width:"100%"}}>
           Log in
         </Button>
+        <p style={{paddingTop:"30px"}}>Need An account ?</p>
+      <a href="/signup" style={{fontSize:"15px",color:"blue"}}>SignUp</a>
       </Form.Item>
       </Card>
     </div>
