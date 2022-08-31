@@ -88,23 +88,24 @@ const GetStarted = () => {
           </Form>
           <marquee class="blink" style={{fontSize:"20px"}}>we'll match you to the Therapist that can help you"</marquee>
       </div>
-      <div className="disya">
       <Carousel autoplay>
-             {Therapist.map((Therapist)=>(
-                        <Space direction="vertical">
-                            {/* <Image preview={true} src={Therapist?.picture[6]} /> */}
-                            <Title level={4} style={{color:"brack"}}>
-                                {Therapist?.lastName.toUpperCase()}
-                                </Title>
-              
-                                <Text type="secondary" style={{color:"white",fontSize:"15px"}} italic>{Therapist?.description}</Text>
-                                
-                        </Space>
-                    
-                    )) }
-        </Carousel>
-          
+      <div className="disya">
+      <div className="image">
+          <div>
+            <h4 style={{ paddingLeft: "5px",color:"white" }}>Depression</h4>
+            <img src={depression} className="image1" />
+          </div>
+          <div>
+            <h4 style={{ paddingLeft: "5px",color:"white" }}>Stress</h4>
+            <img src={stress} className="image1" />
+          </div>
+          <div>
+            <h4 style={{ paddingLeft: "5px",color:"white" }}>Relationship</h4>
+            <img src={relationship} className="image1" />
+          </div>     
+      </div>  
         </div>
+        </Carousel>
       </div>
     </>
   );

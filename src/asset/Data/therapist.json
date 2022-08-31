@@ -1,32 +1,16 @@
 [
     {
-        "firstName":"fabiola",
-        "lastName":"uwimbabazi",
-        "email":"mbabazifaby@gmail.com",
-    "review":"Latest Review For",
-    "names":"Imbabazi Fabiola",
-    "picture":"https://www.essence.com/wp-content/uploads/2020/05/GettyImages-501260861-scaled.jpg",
-    "title":"N.I. wrote 2 days ago",
-    "description":"My experience have been fulfilling and healing I like Jessica she is my therapist but i feel like she is my best friend"
+        "title":"Depression",
+    "picture":"https://www.essence.com/wp-content/uploads/2020/05/GettyImages-501260861-scaled.jpg"
     },
     {
-        "firstName":"ffisla",
-        "lastName":"uwimbabfddrtazi",
-        "email":"mbabugyeliy@gmail.com",
-        "review":"Latest Review For",
-        "names":"Uwineza",
-        "title":"N.I. wrote 2 days ago",
-        "description":"My experience have been fulfilling and healing I like Jessica she is my therapist but i feel like she is my best friend",
+        
+            "title":"Stress",
         "picture":"https://www.essence.com/wp-content/uploads/2020/05/GettyImages-501260861-scaled.jpg"
+    
         },
         {
-            "firstName":"ffisla",
-        "lastName":"uwimbabfddrtazi",
-        "email":"mbabugyeliy@gmail.com",
-            "review":"Latest Review For",
-            "names":"Kalisa",
-            "title":"N.I. wrote 2 days ago",
-            "description":"My experience have been fulfilling and healing I like Jessica she is my therapist but i feel like she is my best friend",
-            "picture":"https://www.essence.com/wp-content/uploads/2020/05/GettyImages-501260861-scaled.jpg"
-            }
+            "title":"RelationShip",
+        "picture":"https://www.essence.com/wp-content/uploads/2020/05/GettyImages-501260861-scaled.jpg"
+        }
 ]
