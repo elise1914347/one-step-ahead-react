@@ -35,10 +35,10 @@ const Footer=()=>{
 
         <div className="acount-columns">
         <h3 className="footer-title">Our Services</h3>
-        <p>Home </p>
-        <p>about us</p>
-        <p>TherapistJob</p>
-        <p>GetStarted</p>
+        <a href="/Home" style={{color:"white"}}>Home </a>
+        <a href="/aboutus" style={{color:"white"}}>about us</a>
+        <a href="/Therapist" style={{color:"white"}}>TherapistJob</a>
+        <a href="/Getstarted" style={{color:"white"}}>GetStarted</a>
         </div>
 
         <div className="acount-columne">
