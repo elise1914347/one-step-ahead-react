@@ -41,6 +41,10 @@ p span{
     color: white;
     margin-left: 80px;
 }
+.acount-columns a{
+display: flex;
+gap: 4rem;
+}
 .acount-columni{
     font-size: 15px;
     color: white;

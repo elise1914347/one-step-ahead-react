@@ -16,7 +16,7 @@ body{
     background-repeat: no-repeat;
 }
 .bodygetstart1{
-    background-image: linear-gradient(rgba(56, 53, 53, 0.418), rgba(84, 85, 90, 0.7)),url("../asset/Images/t8.jpg");
+    background-image:url("../asset/Images/t8.jpg");
     background-size: cover;
     object-fit: cover;
     background-repeat: no-repeat;
