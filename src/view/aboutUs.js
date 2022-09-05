@@ -219,17 +219,20 @@ const About = () => {
           world-changing technologies are being created. We are proud neighbours
           of iconic companies like Google, Apple, and Facebook.
         </h2>
-        <div>
+        <div> 
           <img
             src="https://dy7glz37jgl0b.cloudfront.net/about/office-1.jpg?v=966d54b722cb"
             alt=""
             style={{ width: "30rem",marginLeft:"10rem"  }}
           ></img>
+         
+          
           <img
             src="https://dy7glz37jgl0b.cloudfront.net/about/office-4.jpg?v=966d54b722cb"
             alt=""
             style={{ width: "36rem", padding: "3rem" }}
           ></img>
+          
           <img
             src="https://dy7glz37jgl0b.cloudfront.net/about/office-5.jpg?v=966d54b722cb"
             alt=""
