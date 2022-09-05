@@ -37,7 +37,6 @@ const index=() =>{
         <Route exact path="/aboutus" element={<AboutUs/>}></Route>
         <Route exact path="/GetStarted" element={<GetStarted/>}></Route>
         <Route exact path="/couple" element={<CoupleForm/>}></Route>
-        
         <Route exact path="/Dashboard" element={<DashBoarde/>}></Route>
         <Route exact path="/individual" element={<IndividualForm/>}></Route>
         <Route exact path="/Table" element={<Table/>}></Route>

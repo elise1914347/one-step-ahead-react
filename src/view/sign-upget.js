@@ -58,12 +58,6 @@ const Register =()=>{
         </Form.Item>
      
       <Form.Item >
-        <Form.Item label="age" name="age">
-          <Input />
-        </Form.Item>
-        <Form.Item label="phone" name="phone">
-          <Input/>
-        </Form.Item>
         <Button htmlType="submit" style={{background:"rgb(2, 12, 68)",color:"white"}}>Get started</Button>
       </Form.Item>
       </Card>
